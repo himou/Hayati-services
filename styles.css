@@ -83,6 +83,28 @@ body {
   color: var(--text);
 }
 
+.lang-switch {
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+.lang-btn {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+}
+
+.lang-btn.is-active {
+  background: linear-gradient(135deg, var(--accent), #059669);
+  color: #fff;
+  border-color: transparent;
+}
+
 .brand {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.25rem;
@@ -537,5 +559,9 @@ footer {
     align-items: flex-start;
     gap: 0.8rem;
     flex-direction: column;
+  }
+
+  .lang-switch {
+    align-self: flex-start;
   }
 }
