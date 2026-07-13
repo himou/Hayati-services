@@ -395,6 +395,56 @@ h1 span {
   align-items: flex-start;
 }
 
+.xp-entry {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.xp-entry + .xp-entry {
+  margin-top: 1rem;
+}
+
+.xp-content {
+  flex: 1;
+}
+
+.xp-content h3 {
+  margin: 0;
+}
+
+.xp-block {
+  margin-top: 0.75rem;
+}
+
+.xp-block h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent-2);
+}
+
+.xp-block p {
+  margin: 0.35rem 0 0;
+  color: #334155;
+}
+
+.xp-block ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  color: #334155;
+}
+
+.xp-block li + li {
+  margin-top: 0.2rem;
+}
+
+.xp-label {
+  font-weight: 800;
+  color: var(--accent);
+}
+
 .timeline-dot {
   width: 13px;
   height: 13px;
@@ -526,14 +576,19 @@ footer {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  opacity: 1;
+  transform: none;
 }
 
-.reveal.visible {
+.js .reveal {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+  transition: none;
+}
+
+.js .reveal.visible {
+  opacity: 1;
+  transform: none;
 }
 
 @media (max-width: 900px) {
