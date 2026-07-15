@@ -21,15 +21,15 @@ const ui = {
     "stats.expertiseTitle": "Expertise",
     "stats.expertiseDesc": "Tests fonctionnels et automatisation",
     "stats.goalTitle": "Objectif",
-    "stats.goalDesc": "Mieux communiquer pour mieux intégrer les équipes de développement",
+    "stats.goalDesc": "Mieux communiquer pour mieux collaborer avec les équipes de développement",
     "about.title": "À propos",
     "about.body":
-      "Ingénieur QA avec plus de 10 ans d'expérience, j'aide les équipes produit à réduire le risque de mise en production et à accélérer la livraison sur des environnements web, mobile et API. Chez Kereis, en tant que seul automaticien QA de l'équipe adhésion emprunteur, j'ai piloté la migration des tests API de Postman vers Bruno, migré plus de 100 tests Cypress vers Playwright et intégré l'exécution Playwright/Bruno dans le CI/CD. J'interviens également sur la maintenance des tests automatisés et des outils React métier (tarification, création de dossier), avec un accompagnement des équipes via documentation, formation et usage d'assistants IA. Mon approche repose sur deux principes: bien comprendre le contexte métier et mieux communiquer.",
+      "Ingénieur QA avec plus de 10 ans d'expérience, j'aide les équipes produit à réduire le risque de mise en production et à accélérer la livraison sur des environnements web, mobile et API. Chez Kereis, en tant que seul automaticien QA de l'équipe adhésion emprunteur, j'ai piloté la migration des tests API de Postman vers Bruno, migré plus de 100 tests Cypress vers Playwright et intégré l'exécution Playwright/Bruno dans le CI/CD. J'interviens également sur la maintenance des tests automatisés et des outils React métier (tarification, création de dossier), avec un accompagnement des équipes via documentation, formation et usage d'assistants IA. Mon approche repose sur deux principes : bien comprendre le contexte métier et mieux communiquer.",
     "skills.title": "Compétences clés",
     "skills.legend": "Compétences principales avec niveau et années d'expérience.",
     "stack.title": "Stack et outils",
     "stack.legend":
-      "Lecture: 2 outils par ligne. Colonne gauche = Expert + Débutant. Colonne droite = Confirmé.",
+      "Lecture : 2 outils par ligne. Colonne gauche = Expert + Débutant. Colonne droite = Confirmé.",
     "stack.leftTitle": "Expert et Débutant",
     "stack.rightTitle": "Confirmé",
     "xp.title": "Parcours professionnel",
@@ -41,7 +41,7 @@ const ui = {
     "apps.title": "Portefeuille d'applications et produits",
     "apps.desc":
       "Ensemble des produits et applications web/mobile sur lesquels j'ai conduit des missions de tests fonctionnels, automatisation et assurance qualité.",
-    "projects.title": "Projets et livrables QA",
+    "projects.title": "Réalisations QA par secteur d'activité",
     "clients.title": "Clients qui m'ont fait confiance",
     "clients.desc": "Missions menées dans la banque, l'assurance, la santé, l'automobile et les services.",
     "contact.title": "Travaillons ensemble",
@@ -81,10 +81,10 @@ const ui = {
     "stats.expertiseTitle": "Expertise",
     "stats.expertiseDesc": "Functional testing and automation",
     "stats.goalTitle": "Goal",
-    "stats.goalDesc": "Help product teams move faster",
+    "stats.goalDesc": "Communicate better to collaborate better with development teams",
     "about.title": "About",
     "about.body":
-      "QA Engineer with 10+ years of experience across automotive, banking, insurance, healthcare, and digital services. I progressed from functional test execution to Lead QA and QA Automation roles, with strong expertise in defining testing strategies, leading validation activities, and scaling web, mobile, and API automation. At Kereis, as the sole QA automation engineer in the loan-subscription team, I led the migration of API tests from Postman to Bruno, migrated 100+ Cypress tests to Playwright, integrated automation into CI/CD, and supported the team through documentation, training, and AI-assisted workflows. My approach is based on two principles: understanding business context and improving communication to better align with development teams. This approach prioritizes a focused set of critical, targeted, and maintainable automated tests rather than a large volume of brittle automation.",
+      "QA engineer with more than 10 years of experience, I help product teams reduce release risk and accelerate delivery across web, mobile, and API environments. At Kereis, as the sole QA automation engineer in the loan-subscription team, I led the migration of API tests from Postman to Bruno, migrated more than 100 Cypress tests to Playwright, and integrated Playwright/Bruno execution into CI/CD. I also maintain automated test suites and business React tools (pricing, case creation), while supporting teams through documentation, training, and the use of AI assistants. My approach is based on two principles: understanding business context and improving communication.",
     "skills.title": "Key skills",
     "skills.legend": "Main skills with level and years of experience.",
     "stack.title": "Stack and tools",
@@ -101,7 +101,7 @@ const ui = {
     "apps.title": "Application and product portfolio",
     "apps.desc":
       "A selection of web/mobile products and applications where I delivered functional testing, automation, and QA support.",
-    "projects.title": "QA projects and deliverables",
+    "projects.title": "Cross-sector QA achievements",
     "clients.title": "Clients who trusted me",
     "clients.desc": "Assignments delivered in banking, insurance, healthcare, automotive, and services.",
     "contact.title": "Let's work together",
@@ -148,7 +148,7 @@ const skills = [
   {
     name: {
       fr: "Productivité QA renforcée avec des outils IA",
-      en: "QA productivity improved with AI tools"
+      en: "QA productivity with AI tools"
     },
     years: 1,
     level: "confirme"
@@ -213,86 +213,57 @@ const toolsByLevel = [
 const projects = [
   {
     title: {
-      fr: "Migration de 500+ requêtes Postman vers Bruno",
-      en: "Migration of 500+ Postman requests to Bruno"
+      fr: "Création et validation d'API standard et FHIR",
+      en: "Standard and FHIR API design and validation"
     },
     description: {
-      fr: "Chez Kereis, migration des collections API et industrialisation des tests fonctionnels API avec accélération via assistants IA (génération de scénarios, optimisation des scripts et analyse rapide).",
-      en: "At Kereis, migrated API collections and scaled API functional testing using AI assistants (scenario generation, script optimization, and faster analysis)."
+      fr: "Conception et validation d'API standard et FHIR dans plusieurs secteurs (santé, assurance, banque), avec mise en place de tests fonctionnels et automatisés sur les parcours métier critiques.",
+      en: "Designed and validated standard and FHIR APIs across multiple sectors (healthcare, insurance, banking), with functional and automated testing on critical business journeys."
     },
-    tag: "Kereis"
+    tag: "Santé/Banque/Assurance IARD/Services"
   },
   {
-    title: { fr: "Mise en place QA de A à Z", en: "QA setup from scratch" },
+    title: { fr: "Migration de 500+ requêtes Postman vers Bruno", en: "Migration of 500+ Postman requests to Bruno" },
     description: {
-      fr: "Chez ASSIA et Noelse, définition de la politique et de la stratégie de tests puis structuration d'équipe.",
-      en: "At ASSIA and Noelse, defined testing policy and strategy, then structured QA teams."
+      fr: "Migration complète des collections API vers Bruno pour sécuriser les données hors cloud Postman, standardiser les tests et fiabiliser l'exécution API en environnement maîtrisé.",
+      en: "Completed API collection migration to Bruno to avoid cloud-hosted Postman data, standardize testing, and improve API execution reliability in controlled environments."
     },
-    tag: "Lead QA"
+    tag: "Assurance Emprunteur"
   },
   {
-    title: { fr: "Automatisation web, mobile et API en santé", en: "Healthcare web, mobile, and API automation" },
+    title: { fr: "Mise en place d'une équipe QA et gouvernance", en: "QA team setup and governance" },
     description: {
-      fr: "Sur Mon Espace Santé et DMP: automatisation API, web et parcours applicatifs critiques.",
-      en: "On Mon Espace Santé and DMP: API and web automation on critical user journeys."
+      fr: "Déploiement de la stratégie QA de bout en bout : politique de test, plans de test, structuration et formation d'équipe, puis mise en place d'une gouvernance qualité orientée delivery (cas ASSIA et Noelse).",
+      en: "Delivered end-to-end QA setup: test policy, test plans, team structuring and coaching, then quality governance focused on delivery outcomes (ASSIA and Noelse cases)."
     },
-    tag: "Assurance Maladie"
+    tag: "Banque/Assurance santé"
   },
   {
-    title: { fr: "POC d'automatisation gagnant", en: "Winning automation proof of concept" },
+    title: { fr: "Automatisation ciblée des tests critiques", en: "Targeted automation of critical tests" },
     description: {
-      fr: "Chez CGI, mise en place d'un POC de tests automatisés ayant contribué à remporter un projet.",
-      en: "At CGI, implemented an automated testing POC that helped win a project."
+      fr: "Approche pragmatique orientée valeur: prioriser un périmètre réduit de tests critiques, maintenables et robustes, plutôt qu'un volume élevé de scripts coûteux à maintenir.",
+      en: "Pragmatic value-driven approach: prioritize a limited set of critical, maintainable, and robust tests instead of a large volume of costly, brittle scripts."
     },
-    tag: "CGI"
+    tag: "Santé/Banque/Assurance IARD/Services/Télécom/Grand Public"
   },
   {
-    title: { fr: "Méthodologie tests BPM basée graphes", en: "Graph-based BPM testing methodology" },
-    description: {
-      fr: "Chez Low Code Factory by K2, approche de conception de tests pour mieux couvrir les processus métier.",
-      en: "At Low Code Factory by K2, designed a testing approach to improve business-process coverage."
+    title: {
+      fr: "Pilotage QA et organisations Agile à grande échelle",
+      en: "Multi-application QA leadership in large-scale Agile organizations"
     },
-    tag: "Renault"
+    description: {
+      fr: "Pilotage QA multi-applications (web, mobile, client lourd, API) avec gestion des environnements, des données de test, des anomalies et des mises en production. Expérience en Scrum, SAFe et Kanban sur de grandes organisations (100+, dont 200+ à l'Assurance Maladie) et en livraisons par trains de maintenance avec jalons annuels (Kereis).",
+      en: "Led multi-application QA (web, mobile, desktop, APIs), including environment, test-data, defect, and release management. Experienced in Scrum, SAFe, and Kanban at large scale (100+, including 200+ at Assurance Maladie) and in maintenance-train delivery with annual milestones (Kereis)."
+    },
+    tag: "Organisation / Gouvernance Agile"
   },
   {
-    title: { fr: "Automatisation TNR à 90%", en: "90% regression testing automation" },
+    title: { fr: "Communication QA et alignement des équipes", en: "QA communication and team alignment" },
     description: {
-      fr: "Chez Orange OAB, automatisation avancée des tests de non-régression sur applications web et mobiles.",
-      en: "At Orange OAB, advanced regression test automation on web and mobile applications."
+      fr: "Mise en place de rituels et de documentation QA pour renforcer la communication entre QA, développement, PO et Tech Lead, et donner une meilleure visibilité sur les risques qualité.",
+      en: "Set up QA rituals and documentation to strengthen communication between QA, engineering, product owners, and tech leads, while improving visibility on quality risks."
     },
-    tag: "Orange"
-  },
-  {
-    title: { fr: "Applications mobiles territoriales", en: "Regional public mobile applications" },
-    description: {
-      fr: "Tests des applications Nantes/Perpignan/La Rochelle dans ma poche: services publics et informations territoriales.",
-      en: "Tested Nantes/Perpignan/La Rochelle public apps for city services and local information."
-    },
-    tag: "Orange OAB"
-  },
-  {
-    title: { fr: "Application de navigation Airbus", en: "Airbus navigation application" },
-    description: {
-      fr: "Tests mobiles de la solution de navigation et d'information pour environnement aéronautique.",
-      en: "Mobile testing of a navigation and information solution for the aeronautics environment."
-    },
-    tag: "Orange OAB"
-  },
-  {
-    title: { fr: "Application mobile Givaudan", en: "Givaudan mobile application" },
-    description: {
-      fr: "Tests et assurance qualité de l'application mobile de gestion client et suivi de commandes.",
-      en: "Testing and quality assurance of a mobile app for customer management and order tracking."
-    },
-    tag: "Orange OAB"
-  },
-  {
-    title: { fr: "Livebox - Écosystème d'applications", en: "Livebox application ecosystem" },
-    description: {
-      fr: "Tests fonctionnels des applications web, mobile (iOS/Android) et client lourd de gestion Livebox Orange.",
-      en: "Functional testing of Orange Livebox web, mobile (iOS/Android), and desktop applications."
-    },
-    tag: "Orange OAB"
+    tag: "Santé/Banque/Assurance IARD/Services/Télécom/Grand Public"
   }
 ];
 
@@ -426,7 +397,7 @@ const clients = [
   { name: "Noelse", note: { fr: "Neobanque", en: "Neobank" } },
   {
     name: "La Poste (via CGI)",
-    note: { fr: "Applications assurance, guichet et services", en: "Insurance, desk, and service applications" }
+    note: { fr: "Applications assurance, guichet et services", en: "Insurance, counter, and service applications" }
   },
   { name: "Renault (via LCF by K2)", note: { fr: "Projets BPM low-code", en: "Low-code BPM projects" } },
   { name: "Orange", note: { fr: "Applications B2B, B2C, B2E et Livebox", en: "B2B, B2C, B2E, and Livebox applications" } },
@@ -579,59 +550,67 @@ const experiences = [
     company: "Assurance Maladie (via Atos)",
     dates: { fr: "Sep. 2021 - Avr. 2024", en: "Sep 2021 - Apr 2024" },
     context: {
-      fr: "Mission sur des produits numériques de santé critiques (Mon Espace Santé et DMP) pour l'Assurance Maladie.",
-      en: "Assignment on critical healthcare digital products (Mon Espace Santé and DMP) for Health Insurance."
+      fr: "Mon Espace Santé permet à chaque citoyen de centraliser et gérer ses informations médicales en ligne de façon sécurisée et confidentielle. Le Dossier Médical Partagé (DMP) centralise les informations médicales importantes afin de les rendre accessibles aux professionnels de santé, avec l'accord du patient.",
+      en: "Mon Espace Santé enables each citizen to centralize and manage medical information online in a secure and confidential way. The Shared Medical Record (DMP) centralizes key medical information to make it accessible to healthcare professionals, with patient consent."
     },
     responsibilities: {
       fr: [
-        "Conception et exécution des tests fonctionnels",
-        "Qualité des parcours web, mobile et API"
+        "Tests fonctionnels manuels et automatisés de l'application mobile Mon Espace Santé",
+        "Tests fonctionnels manuels et automatisés de l'application web Mon Espace Santé",
+        "Tests fonctionnels automatisés des API du Dossier Médical Partagé"
       ],
       en: [
-        "Functional test design and execution",
-        "Quality on web, mobile, and API user journeys"
+        "Manual and automated functional testing for the Mon Espace Santé mobile app",
+        "Manual and automated functional testing for the Mon Espace Santé web app",
+        "Automated functional API testing for the Shared Medical Record"
       ]
     },
     actions: {
       fr: [
-        "Rédaction des cas de tests et exécution des campagnes",
-        "Automatisation des tests API et web",
-        "Gestion des anomalies et suivi de correction",
-        "Réalisation de tests d'accessibilité"
+        "Analyse, conception et exécution des tests",
+        "Gestion des environnements (plateformes, applications)",
+        "Gestion des anomalies",
+        "Automatisation des API avec Postman",
+        "Automatisation des API FHIR - Personal Health Device (PHD)",
+        "Automatisation des pages web avec Katalon",
+        "Automatisation de l'application web avec Katalon et BrowserStack"
       ],
       en: [
-        "Authored test cases and executed campaigns",
-        "Automated API and web tests",
-        "Managed defects and fix tracking",
-        "Performed accessibility testing"
+        "Test analysis, design, and execution",
+        "Environment management (platforms, applications)",
+        "Defect management",
+        "API automation with Postman",
+        "FHIR API automation - Personal Health Device (PHD)",
+        "Web page automation with Katalon",
+        "Web application automation with Katalon and BrowserStack"
       ]
     },
     results: {
       fr: [
-        "Sécurisation des parcours critiques santé",
-        "Amélioration de la couverture de tests automatisés"
+        "Audit d'accessibilité réussi",
+        "Automatisation des tests sur les parcours critiques"
       ],
       en: [
-        "Secured critical healthcare user journeys",
-        "Improved automated test coverage"
+        "Successful accessibility audit",
+        "Automated testing delivered on critical journeys"
       ]
     },
     environment: {
       fr: [
-        "Méthodologies: Agile",
-        "Gestionnaire de tests: Squash TM",
-        "Outils: Katalon, Postman, BrowserStack",
-        "Type d'application: Web, Mobile, API",
-        "Niveau de tests: Fonctionnels, accessibilité, intégration",
-        "Secteur d'activité: Santé"
+        "Méthodologies: Scrum, SAFe",
+        "Gestionnaire de tests: ALM, Jira Xray",
+        "Outils: Confluence, Jira, Postman, Wizard, Robot Framework, Katalon, BrowserStack",
+        "Type d'application: Android, iOS, Web, API",
+        "Niveau de tests: Tests d'intégration, tests système, tests d'acceptation",
+        "Secteur d'activité: Assurance Maladie"
       ],
       en: [
-        "Methodologies: Agile",
-        "Test manager: Squash TM",
-        "Tools: Katalon, Postman, BrowserStack",
-        "Application type: Web, Mobile, API",
-        "Test levels: Functional, accessibility, integration",
-        "Business sector: Healthcare"
+        "Methodologies: Scrum, SAFe",
+        "Test manager: ALM, Jira Xray",
+        "Tools: Confluence, Jira, Postman, Wizard, Robot Framework, Katalon, BrowserStack",
+        "Application type: Android, iOS, Web, API",
+        "Test levels: Integration, system, acceptance testing",
+        "Business sector: Health Insurance"
       ]
     }
   },
@@ -640,58 +619,72 @@ const experiences = [
     company: "Noelse (via Davao)",
     dates: { fr: "Mars 2020 - Août 2021", en: "Mar 2020 - Aug 2021" },
     context: {
-      fr: "Noelse est une néobanque proposant des services digitaux pour particuliers et professionnels.",
-      en: "Noelse is a neobank offering digital services to individuals and professionals."
+      fr: "Noelse est une néobanque française, issue du groupe Afone, qui propose des services bancaires en ligne pour particuliers et professionnels.",
+      en: "Noelse is a French neobank, part of the Afone group, offering online banking services for individuals and professionals."
     },
     responsibilities: {
       fr: [
-        "Pilotage de la recette manuelle et automatisée",
-        "Mise en place de l'organisation QA"
+        "Pilotage des tests fonctionnels manuels et automatisés des applications mobiles et web",
+        "Pilotage d'une équipe de recette"
       ],
       en: [
-        "Managed manual and automated testing",
-        "Set up QA organization"
+        "Led manual and automated functional testing for mobile and web applications",
+        "Led a validation team"
       ]
     },
     actions: {
       fr: [
-        "Définition de la stratégie de tests et des objectifs qualité",
-        "Mise en place des processus de gestion d'anomalies",
-        "Automatisation des scénarios critiques web/mobile",
-        "Support qualité en production"
+        "Rédaction de la politique de tests, de la stratégie de tests et des plans de tests",
+        "Conseil au recrutement de testeurs",
+        "Pilotage d'une équipe de recette de 4 personnes et coordination des activités de recette",
+        "Gestion des anomalies de production et de recette",
+        "Gestion des environnements (plateformes, applications)",
+        "Gestion des jeux de données",
+        "Gestion des mises en production",
+        "Suivi des tests automatisés réalisés par les testeurs de l'équipe"
       ],
       en: [
-        "Defined testing strategy and quality objectives",
-        "Set up defect management workflows",
-        "Automated critical web/mobile scenarios",
-        "Provided production quality support"
+        "Wrote test policy, test strategy, and test plans",
+        "Provided guidance for tester recruitment",
+        "Led a 4-person validation team and coordinated validation activities",
+        "Managed production and validation defects",
+        "Managed environments (platforms, applications)",
+        "Managed test datasets",
+        "Managed production releases",
+        "Monitored automated tests executed by team testers"
       ]
     },
     results: {
       fr: [
-        "Équipe QA structurée et montée en autonomie",
-        "Cycle de recette plus fluide avant mise en production"
+        "Mise en place de la politique et de la stratégie de tests du groupe à partir de zéro",
+        "Structuration d'une équipe de 3 testeurs et 1 stagiaire",
+        "Amélioration de la qualité des livrables",
+        "Mise en place d'un comité de mise en production (Lead QA, Tech Lead, PO, décideurs)"
       ],
       en: [
-        "Structured and autonomous QA team",
-        "Smoother validation cycle before production releases"
+        "Built the group's test policy and strategy from scratch",
+        "Structured a team of 3 testers and 1 intern",
+        "Improved deliverable quality",
+        "Set up a production release committee (Lead QA, Tech Lead, PO, decision-makers)"
       ]
     },
     environment: {
       fr: [
         "Méthodologies: Agile, Scrum",
-        "Gestionnaire de tests: Jira, Xray",
-        "Outils: Robot Framework, Appium, Postman",
-        "Type d'application: Web, Mobile, API",
-        "Niveau de tests: Intégration, E2E, TNR",
+        "Gestionnaire de tests: Squash TM, Jira, Xray",
+        "Frameworks: Appium, Gherkin, Cucumber, Selenium",
+        "Outils: TestFlight, Postman, SQL, PuTTY, FileZilla",
+        "Type d'application: Android, iOS, Web, API, KYC",
+        "Niveau de tests: Tests d'intégration, tests système, tests d'acceptation",
         "Secteur d'activité: Banque digitale"
       ],
       en: [
         "Methodologies: Agile, Scrum",
-        "Test manager: Jira, Xray",
-        "Tools: Robot Framework, Appium, Postman",
-        "Application type: Web, Mobile, API",
-        "Test levels: Integration, E2E, regression",
+        "Test manager: Squash TM, Jira, Xray",
+        "Frameworks: Appium, Gherkin, Cucumber, Selenium",
+        "Tools: TestFlight, Postman, SQL, PuTTY, FileZilla",
+        "Application type: Android, iOS, Web, API, KYC",
+        "Test levels: Integration, system, acceptance testing",
         "Business sector: Digital banking"
       ]
     }
@@ -701,59 +694,63 @@ const experiences = [
     company: "CGI (pour La Poste)",
     dates: { fr: "Mai 2019 - Fév. 2020", en: "May 2019 - Feb 2020" },
     context: {
-      fr: "Mission de recette sur les applications services et assurance de La Poste, dans un contexte multi-équipes.",
-      en: "Validation assignment on La Poste service and insurance applications in a multi-team context."
+      fr: "La Poste Solutions Business est la marque B2B du groupe La Poste, dédiée aux entreprises, collectivités et administrations publiques.",
+      en: "La Poste Solutions Business is the B2B brand of La Poste Group, dedicated to companies, local authorities, and public administrations."
     },
     responsibilities: {
       fr: [
-        "Pilotage de la recette fonctionnelle",
-        "Gestion des environnements et jeux de données"
+        "Pilotage des tests fonctionnels manuels et automatisés des applications PC, mobiles et web de La Poste (Assurance et Guichet)",
+        "Pilotage de la recette"
       ],
       en: [
-        "Led functional validation activities",
-        "Managed environments and test data"
+        "Led manual and automated functional testing on La Poste desktop, mobile, and web applications (Insurance and Counter operations)",
+        "Led validation activities"
       ]
     },
     actions: {
       fr: [
-        "Conception et exécution des cas de tests",
-        "Automatisation de parcours prioritaires",
-        "Coordination avec MOA/MOE et équipes techniques",
-        "Suivi et priorisation des anomalies"
+        "Analyse, conception et exécution des tests",
+        "Gestion des environnements (plateformes, applications)",
+        "Gestion des jeux de données",
+        "Automatisation des tests",
+        "Pilotage de recette",
+        "Gestion des anomalies"
       ],
       en: [
-        "Designed and executed test cases",
-        "Automated priority scenarios",
-        "Coordinated with business and technical teams",
-        "Tracked and prioritized defects"
+        "Test analysis, design, and execution",
+        "Environment management (platforms, applications)",
+        "Test data management",
+        "Test automation",
+        "Validation leadership",
+        "Defect management"
       ]
     },
     results: {
       fr: [
-        "Recettes stabilisées sur les versions majeures",
-        "Meilleure maîtrise des risques de livraison"
+        "CGI a remporté un projet grâce au POC d'automatisation de tests mis en place",
+        "Amélioration de la fiabilité des livraisons"
       ],
       en: [
-        "Stabilized validation for major releases",
-        "Improved delivery risk control"
+        "CGI won a project thanks to the test automation proof of concept delivered",
+        "Improved delivery reliability"
       ]
     },
     environment: {
       fr: [
-        "Méthodologies: Cycle en V, Agile",
-        "Gestionnaire de tests: ALM",
-        "Outils: Robot Framework, Selenium, SoapUI",
-        "Type d'application: Web, Desktop",
-        "Niveau de tests: Fonctionnels, intégration, TNR",
-        "Secteur d'activité: Services postaux et assurance"
+        "Gestionnaire de tests: Squash TM, Jira",
+        "Frameworks: Robot Framework, Selenium",
+        "Outils: Mantis, APK Manager, SoapUI",
+        "Type d'application: Android, iOS, Web, client lourd",
+        "Niveau de tests: Tests d'intégration, tests système, tests d'acceptation",
+        "Secteur d'activité: Banque, assurance, courrier"
       ],
       en: [
-        "Methodologies: V-cycle, Agile",
-        "Test manager: ALM",
-        "Tools: Robot Framework, Selenium, SoapUI",
-        "Application type: Web, Desktop",
-        "Test levels: Functional, integration, regression",
-        "Business sector: Postal services and insurance"
+        "Test manager: Squash TM, Jira",
+        "Frameworks: Robot Framework, Selenium",
+        "Tools: Mantis, APK Manager, SoapUI",
+        "Application type: Android, iOS, Web, desktop",
+        "Test levels: Integration, system, acceptance testing",
+        "Business sector: Banking, insurance, postal services"
       ]
     }
   },
@@ -762,59 +759,63 @@ const experiences = [
     company: "Low Code Factory by K2 (pour Renault)",
     dates: { fr: "Jan. 2019 - Avr. 2019", en: "Jan 2019 - Apr 2019" },
     context: {
-      fr: "Projet BPM low-code chez Renault pour améliorer la couverture des processus métier.",
-      en: "Low-code BPM project at Renault to improve business process coverage."
+      fr: "K2 est une plateforme qui permet aux entreprises de modéliser, automatiser et optimiser leurs processus métiers grâce à une approche low-code, facilitant la transformation numérique et l'efficacité opérationnelle.",
+      en: "K2 is a platform that enables companies to model, automate, and optimize business processes through a low-code approach, accelerating digital transformation and operational efficiency."
     },
     responsibilities: {
       fr: [
-        "Référent qualité sur les tests BPM",
-        "Appui à l'intégration des flux K2"
+        "Pilotage des tests fonctionnels sur l'ensemble des projets BPM K2",
+        "Référent test pour les projets Renault"
       ],
       en: [
-        "QA reference for BPM testing",
-        "Support for K2 flow integration"
+        "Led functional testing across all K2 BPM projects",
+        "Test lead reference for Renault projects"
       ]
     },
     actions: {
       fr: [
-        "Définition de la stratégie de tests BPM",
-        "Organisation des campagnes et exécution",
-        "Contribution aux ajustements K2",
-        "Gestion et suivi des anomalies"
+        "Élaboration de la stratégie de tests",
+        "Organisation des tests",
+        "Conception de tests",
+        "Gestion des jeux de données",
+        "Exécution des tests",
+        "Intégration et développement K2",
+        "Gestion des anomalies"
       ],
       en: [
-        "Defined BPM testing strategy",
-        "Organized and executed test campaigns",
-        "Contributed to K2 adjustments",
-        "Managed and tracked defects"
+        "Defined the testing strategy",
+        "Organized testing activities",
+        "Designed test cases",
+        "Managed test datasets",
+        "Executed test campaigns",
+        "Contributed to K2 integration and development",
+        "Managed defects"
       ]
     },
     results: {
       fr: [
-        "Approche de tests mieux alignée aux processus métier",
-        "Amélioration de la lisibilité des scénarios de validation"
+        "Mise en place d'une méthodologie de test basée sur la théorie des graphes",
+        "Amélioration de la couverture et de la pertinence des tests sur les solutions BPM"
       ],
       en: [
-        "Testing approach better aligned with business processes",
-        "Improved readability of validation scenarios"
+        "Implemented a graph-theory-based testing methodology",
+        "Improved test coverage and relevance on BPM solutions"
       ]
     },
     environment: {
       fr: [
-        "Méthodologie: Agile",
-        "Gestionnaire de tests: Squash TM",
-        "Outils: K2, SQL",
+        "Gestionnaire de tests: TFS",
+        "BPM: K2",
         "Type d'application: Plateforme BPM",
-        "Niveau de tests: Métier, intégration",
-        "Secteur d'activité: Automobile"
+        "Niveau de tests: Tests d'intégration, tests système, tests d'acceptation",
+        "Secteur d'activité: Automobile, banque"
       ],
       en: [
-        "Methodology: Agile",
-        "Test manager: Squash TM",
-        "Tools: K2, SQL",
+        "Test manager: TFS",
+        "BPM: K2",
         "Application type: BPM platform",
-        "Test levels: Business, integration",
-        "Business sector: Automotive"
+        "Test levels: Integration, system, acceptance testing",
+        "Business sector: Automotive, banking"
       ]
     }
   },
@@ -823,59 +824,65 @@ const experiences = [
     company: "Orange OAB",
     dates: { fr: "Jan. 2018 - Déc. 2018", en: "Jan 2018 - Dec 2018" },
     context: {
-      fr: "Mission sur des applications Orange B2B/B2C/B2E et services connectés.",
-      en: "Assignment on Orange B2B/B2C/B2E applications and connected services."
+      fr: "Pilotage des tests fonctionnels et automatisés d'un ensemble d'applications mobiles (iOS, Android, Windows) et web de type B2B, B2C, B2E. Exemples : Nantes dans ma poche, Perpignan dans ma poche, La Rochelle dans ma poche.",
+      en: "Led functional and automated testing for a portfolio of mobile (iOS, Android, Windows) and web applications across B2B, B2C, and B2E use cases."
     },
     responsibilities: {
       fr: [
-        "Pilotage de la qualification sur plusieurs produits",
-        "Animation de la stratégie de tests"
+        "Pilotage des tests fonctionnels et automatisés",
+        "Pilotage des projets de tests sur un périmètre multi-applications"
       ],
       en: [
-        "Led qualification across multiple products",
-        "Drove test strategy"
+        "Led functional and automated testing activities",
+        "Led test projects across multiple applications"
       ]
     },
     actions: {
       fr: [
-        "Planification des campagnes de tests web/mobile",
-        "Automatisation de services avec SoapUI",
-        "Suivi des anomalies et arbitrage de priorités",
-        "Reporting qualité pour les jalons projet"
+        "Élaboration de la stratégie de tests",
+        "Conception de tests",
+        "Exécution de tests",
+        "Gestion des environnements (plateformes, applications)",
+        "Pilotage de projet de tests",
+        "Automatisation des tests de web services avec SoapUI (scripts Groovy)",
+        "Gestion des anomalies"
       ],
       en: [
-        "Planned web/mobile test campaigns",
-        "Automated services with SoapUI",
-        "Tracked defects and priority arbitration",
-        "Produced quality reporting for project milestones"
+        "Defined the testing strategy",
+        "Designed test cases",
+        "Executed tests",
+        "Managed environments (platforms, applications)",
+        "Led test projects",
+        "Automated web service tests with SoapUI (Groovy scripts)",
+        "Managed defects"
       ]
     },
     results: {
       fr: [
-        "Amélioration de la fiabilité avant mises en production",
-        "Industrialisation des tests de services"
+        "Succès commercial des applications",
+        "Amélioration de la qualité des livrables"
       ],
       en: [
-        "Improved reliability before releases",
-        "Scaled service-level testing"
+        "Commercial success of the applications",
+        "Improved deliverable quality"
       ]
     },
     environment: {
       fr: [
-        "Méthodologies: Agile, Cycle en V",
-        "Gestionnaire de tests: TFS",
-        "Outils: SoapUI, Selenium",
-        "Type d'application: Web, Mobile, Services",
-        "Niveau de tests: Fonctionnels, intégration, TNR",
-        "Secteur d'activité: Télécom"
+        "Méthodologies: Scrum, TDD",
+        "Gestionnaire de tests: TFS, Jira, Squash TM",
+        "Outils: Alfresco, SoapUI",
+        "Type d'application: Android, iOS, Web",
+        "Niveau de tests: Tests d'intégration, tests système, tests d'acceptation",
+        "Secteur d'activité: Grand public, banque, assurance"
       ],
       en: [
-        "Methodologies: Agile, V-cycle",
-        "Test manager: TFS",
-        "Tools: SoapUI, Selenium",
-        "Application type: Web, Mobile, Services",
-        "Test levels: Functional, integration, regression",
-        "Business sector: Telecom"
+        "Methodologies: Scrum, TDD",
+        "Test manager: TFS, Jira, Squash TM",
+        "Tools: Alfresco, SoapUI",
+        "Application type: Android, iOS, Web",
+        "Test levels: Integration, system, acceptance testing",
+        "Business sector: Consumer, banking, insurance"
       ]
     }
   },
@@ -884,59 +891,65 @@ const experiences = [
     company: "Orange OAB",
     dates: { fr: "Avr. 2016 - Déc. 2017", en: "Apr 2016 - Dec 2017" },
     context: {
-      fr: "Projet de qualification d'une application web SVI (serveur vocal interactif).",
-      en: "Qualification project for an IVR web application."
+      fr: "Tests fonctionnels et automatisés d'une application web permettant à un utilisateur de construire son propre serveur vocal interactif.",
+      en: "Functional and automated testing of a web application enabling users to build their own interactive voice response server."
     },
     responsibilities: {
       fr: [
-        "Tests fonctionnels et automatisés de la plateforme",
-        "Support qualité au cycle de développement"
+        "Tests fonctionnels et automatisés de l'application web SVI",
+        "Contribution à la qualité sur l'ensemble du cycle de développement"
       ],
       en: [
-        "Functional and automated testing of the platform",
-        "Quality support for the development cycle"
+        "Functional and automated testing of the IVR web application",
+        "Quality contribution across the full development lifecycle"
       ]
     },
     actions: {
       fr: [
-        "Conception de cas de tests orientés TDD",
-        "Automatisation keyword-driven",
-        "Exécution des campagnes de validation",
-        "Gestion des anomalies jusqu'à correction"
+        "Élaboration de la stratégie de tests",
+        "Analyse fonctionnelle et analyse technique de test",
+        "Conception de tests selon la méthodologie TDD",
+        "Exécution des tests",
+        "Automatisation selon la méthodologie Keyword Driven Testing",
+        "Gestion des anomalies"
       ],
       en: [
-        "Designed TDD-oriented test cases",
-        "Implemented keyword-driven automation",
-        "Executed validation campaigns",
-        "Managed defects through resolution"
+        "Defined the testing strategy",
+        "Performed functional and technical test analysis",
+        "Designed tests using TDD methodology",
+        "Executed tests",
+        "Implemented automation using Keyword-Driven Testing",
+        "Managed defects"
       ]
     },
     results: {
       fr: [
-        "Réduction des régressions sur les parcours SVI",
-        "Standardisation des scénarios de tests automatisés"
+        "Automatisation de 90% des tests de non-régression",
+        "Amélioration de la stabilité des livraisons"
       ],
       en: [
-        "Reduced regressions on IVR flows",
-        "Standardized automated testing scenarios"
+        "Automated 90% of non-regression tests",
+        "Improved release stability"
       ]
     },
     environment: {
       fr: [
-        "Méthodologies: Agile",
-        "Gestionnaire de tests: TFS",
-        "Outils: Robot Framework, Selenium",
-        "Type d'application: Web",
-        "Niveau de tests: Fonctionnels, intégration",
-        "Secteur d'activité: Télécom"
+        "Méthodologies: Scrum, TDD, Keyword Driven Testing",
+        "Frameworks: Robot Framework, Selenium",
+        "Gestionnaire de tests: Squash TM, Jira",
+        "Outils: Alfresco, Wiki",
+        "Type d'application: Android, iOS, Web",
+        "Niveau de tests: Tests d'intégration, tests système, tests d'acceptation",
+        "Secteur d'activité: Opérateur Orange"
       ],
       en: [
-        "Methodologies: Agile",
-        "Test manager: TFS",
-        "Tools: Robot Framework, Selenium",
-        "Application type: Web",
-        "Test levels: Functional, integration",
-        "Business sector: Telecom"
+        "Methodologies: Scrum, TDD, Keyword-Driven Testing",
+        "Frameworks: Robot Framework, Selenium",
+        "Test manager: Squash TM, Jira",
+        "Tools: Alfresco, Wiki",
+        "Application type: Android, iOS, Web",
+        "Test levels: Integration, system, acceptance testing",
+        "Business sector: Orange telecommunications operator"
       ]
     }
   },
@@ -945,59 +958,55 @@ const experiences = [
     company: "Orange OAB",
     dates: { fr: "Sep. 2015 - Mars 2016", en: "Sep 2015 - Mar 2016" },
     context: {
-      fr: "Intervention QA sur l'écosystème d'applications Livebox (desktop, web et mobile).",
-      en: "QA assignment on the Livebox application ecosystem (desktop, web, and mobile)."
+      fr: "Tests fonctionnels d'un ensemble d'applications PC, web et mobile (iOS, Android) permettant de gérer le contenu stocké sur une Livebox Orange.",
+      en: "Functional testing of a portfolio of desktop, web, and mobile applications (iOS, Android) used to manage content stored on an Orange Livebox."
     },
     responsibilities: {
       fr: [
-        "Validation des parcours utilisateurs multi-plateformes",
-        "Gestion des jeux de données de tests"
+        "Tests fonctionnels sur applications PC, web et mobile",
+        "Gestion des données de tests et des anomalies"
       ],
       en: [
-        "Validated multi-platform user journeys",
-        "Managed test datasets"
+        "Functional testing on desktop, web, and mobile applications",
+        "Management of test data and defects"
       ]
     },
     actions: {
       fr: [
-        "Exécution des tests fonctionnels",
-        "Analyse des écarts et déclaration d'anomalies",
-        "Préparation des données de tests",
-        "Coordination avec les équipes de développement"
+        "Conception de tests",
+        "Exécution des tests",
+        "Gestion des jeux de données",
+        "Gestion des anomalies"
       ],
       en: [
-        "Executed functional tests",
-        "Analyzed gaps and reported defects",
-        "Prepared test data",
-        "Coordinated with development teams"
+        "Designed test cases",
+        "Executed tests",
+        "Managed test datasets",
+        "Managed defects"
       ]
     },
     results: {
       fr: [
-        "Qualification des versions majeures Livebox",
-        "Fiabilisation des campagnes de tests manuels"
+        "Succès de la commercialisation de la Livebox",
+        "Fiabilisation des livraisons sur les parcours critiques"
       ],
       en: [
-        "Validated major Livebox releases",
-        "Improved reliability of manual test campaigns"
+        "Successful Livebox market rollout",
+        "Improved delivery reliability on critical user journeys"
       ]
     },
     environment: {
       fr: [
-        "Méthodologie: Cycle en V",
-        "Gestionnaire de tests: TFS",
-        "Outils: ALM, Mantis",
-        "Type d'application: Desktop, Web, Mobile",
-        "Niveau de tests: Fonctionnels, recette",
-        "Secteur d'activité: Télécom"
+        "Gestionnaire de tests: QC, Mantis, Jira",
+        "Type d'application: Android, iOS, Web",
+        "Niveau de tests: Tests système, tests d'acceptation",
+        "Secteur d'activité: Opérateur Orange"
       ],
       en: [
-        "Methodology: V-cycle",
-        "Test manager: TFS",
-        "Tools: ALM, Mantis",
-        "Application type: Desktop, Web, Mobile",
-        "Test levels: Functional, acceptance",
-        "Business sector: Telecom"
+        "Test manager: QC, Mantis, Jira",
+        "Application type: Android, iOS, Web",
+        "Test levels: System, acceptance testing",
+        "Business sector: Orange telecommunications operator"
       ]
     }
   },
@@ -1006,57 +1015,43 @@ const experiences = [
     company: "Orange OLPS",
     dates: { fr: "Mars 2015 - Août 2015", en: "Mar 2015 - Aug 2015" },
     context: {
-      fr: "Stage de fin d'études orienté développement d'une API Java pour serveur vocal interactif.",
-      en: "Final internship focused on Java API development for interactive voice servers."
+      fr: "En charge du développement d'une application Java qui permet d'extraire des informations d'un fichier Excel pour les transmettre à un serveur vocal interactif.",
+      en: "Responsible for developing a Java application that extracts information from an Excel file and sends it to an interactive voice response server."
     },
     responsibilities: {
-      fr: [
-        "Conception technique et développement Java",
-        "Intégration de la solution dans l'environnement cible"
-      ],
-      en: [
-        "Technical design and Java development",
-        "Integrated the solution into the target environment"
-      ]
+      fr: [],
+      en: []
     },
     actions: {
       fr: [
-        "Analyse du besoin d'extraction Excel",
-        "Développement d'une API Java dédiée",
-        "Réalisation des tests unitaires et d'intégration",
-        "Déploiement et support d'intégration"
+        "Conception du projet",
+        "Développement du projet",
+        "Intégration et déploiement de l'Application sur les serveurs"
       ],
       en: [
-        "Analyzed Excel extraction requirements",
-        "Developed a dedicated Java API",
-        "Performed unit and integration tests",
-        "Delivered deployment and integration support"
+        "Designed the project",
+        "Developed the project",
+        "Integrated and deployed the application on servers"
       ]
     },
     results: {
       fr: [
-        "Solution d'extraction opérationnelle pour le serveur vocal",
-        "Livrable industrialisable par les équipes internes"
+        "L'Application est actuellement utilisée en production"
       ],
       en: [
-        "Operational extraction solution for IVR server",
-        "Deliverable suitable for internal industrialization"
+        "The application is currently used in production"
       ]
     },
     environment: {
       fr: [
-        "Méthodologie: Cycle en V",
-        "Outils: Java, SQL",
-        "Type d'application: API",
-        "Niveau de tests: Unitaires, intégration",
-        "Secteur d'activité: Télécom"
+        "Méthodologie: Scrum, UML",
+        "Langage: Java",
+        "Autres: Eclipse, PuTTY"
       ],
       en: [
-        "Methodology: V-cycle",
-        "Tools: Java, SQL",
-        "Application type: API",
-        "Test levels: Unit, integration",
-        "Business sector: Telecom"
+        "Methodology: Scrum, UML",
+        "Language: Java",
+        "Other: Eclipse, PuTTY"
       ]
     }
   }
@@ -1214,6 +1209,11 @@ function renderExperiences(items, lang) {
       "Méthodologie",
       "Méthodologies",
       "Gestionnaire de tests",
+      "BPM",
+      "Langage",
+      "Autres",
+      "Framework",
+      "Frameworks",
       "Outils",
       "Type d'application",
       "Niveau de tests",
@@ -1221,6 +1221,11 @@ function renderExperiences(items, lang) {
       "Methodology",
       "Methodologies",
       "Test manager",
+      "BPM",
+      "Language",
+      "Other",
+      "Framework",
+      "Frameworks",
       "Tools",
       "Application type",
       "Test levels",
