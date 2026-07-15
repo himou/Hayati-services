@@ -249,13 +249,13 @@ const projects = [
   {
     title: {
       fr: "Pilotage QA et organisations Agile à grande échelle",
-      en: "Multi-application QA leadership in large-scale Agile organizations"
+      en: "QA leadership in large-scale Agile organizations"
     },
     description: {
-      fr: "Pilotage QA multi-applications (web, mobile, client lourd, API) avec gestion des environnements, des données de test, des anomalies et des mises en production. Expérience en Scrum, SAFe et Kanban sur de grandes organisations (100+, dont 200+ à l'Assurance Maladie) et en livraisons par trains de maintenance avec jalons annuels (Kereis).",
-      en: "Led multi-application QA (web, mobile, desktop, APIs), including environment, test-data, defect, and release management. Experienced in Scrum, SAFe, and Kanban at large scale (100+, including 200+ at Assurance Maladie) and in maintenance-train delivery with annual milestones (Kereis)."
+      fr: "Pilotage QA multi-applications (web, mobile, client lourd, API) avec gestion des environnements, des données de test, des anomalies et des mises en production. Expérience en Scrum, SAFe et Kanban sur de grandes organisations (plus de 200 collaborateurs à l'Assurance Maladie) et en livraisons par trains de maintenance avec jalons annuels (Kereis).",
+      en: "Led multi-application QA (web, mobile, desktop, APIs), including environment, test-data, defect, and release management. Experienced in Scrum, SAFe, and Kanban at large scale (200+ at Assurance Maladie) and in maintenance-train delivery with annual milestones (Kereis)."
     },
-    tag: "Organisation / Gouvernance Agile"
+    tag: "Santé/Banque/Assurance IARD/Services/Télécom/Grand Public"
   },
   {
     title: { fr: "Communication QA et alignement des équipes", en: "QA communication and team alignment" },
