@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dossier de compétences — Ibrahim Soumana Harouna</title>
+<meta name="description" content="Dossier de compétences d'Ibrahim Soumana Harouna, Senior QA Automation Engineer & Lead QA, 11 ans d'expérience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-900:#071a33; --navy-800:#0b2545; --navy-700:#123a6b; --navy-600:#1a4c86;
+  --blue-600:#1f63ad; --blue-500:#2f80d1; --sky-400:#5aaae8; --sky-300:#8cc6f2;
+  --ice-100:#e8f0f9; --ice-50:#f3f7fc; --line:#d5e1ef;
+  --ink:#0f1f36; --ink-2:#3a4a63; --muted:#6a7a92;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);font-size:9.6pt;line-height:1.45;background:#cfd9e6;-webkit-font-smoothing:antialiased}
+
+/* ---------- Mise en page A4 ---------- */
+@page{size:A4;margin:12mm 13mm 14mm;
+  @bottom-left{content:"Ibrahim Soumana Harouna · Dossier de compétences";font:600 7.5pt Inter,sans-serif;color:#6a7a92}
+  @bottom-right{content:"Page " counter(page) " / " counter(pages);font:600 7.5pt Inter,sans-serif;color:#1f63ad}
+}
+.doc{width:210mm;margin:24px auto;background:#fff;padding:12mm 13mm 14mm;box-shadow:0 10px 40px rgba(7,26,51,.25)}
+@media print{
+  body{background:#fff}
+  .doc{width:auto;margin:0;padding:0;box-shadow:none}
+  .no-print{display:none!important}
+  .profile .facts{display:none}
+  .doc .profile{grid-template-columns:1fr}
+}
+.pb{break-before:page}
+.avoid{break-inside:avoid}
+
+/* ---------- Barre écran ---------- */
+.tools-bar{position:sticky;top:0;z-index:5;background:var(--navy-900);color:#fff;padding:10px 20px;display:flex;justify-content:center;gap:10px;border-bottom:3px solid var(--blue-500)}
+.tools-bar button,.tools-bar a{font:600 13px Inter,sans-serif;color:#fff;background:var(--blue-500);border:0;border-radius:8px;padding:8px 14px;cursor:pointer;text-decoration:none}
+.tools-bar a{background:transparent;border:1px solid rgba(255,255,255,.3)}
+
+/* ---------- En-tête page 1 ---------- */
+.head{position:relative;overflow:hidden;border-radius:10px;color:#fff;padding:18px 22px;display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;
+  background:radial-gradient(circle at 88% 0%,rgba(90,170,232,.35),transparent 50%),linear-gradient(150deg,var(--navy-700),var(--navy-900))}
+.head:after{content:"";position:absolute;right:0;bottom:0;width:45%;height:16px;opacity:.75;
+  background:linear-gradient(108deg,transparent 0 20%,var(--blue-600) 20% 24%,transparent 24% 42%,var(--navy-600) 42% 46%,transparent 46% 64%,var(--navy-700) 64%)}
+.head .kicker{font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sky-400)}
+.head h1{font-size:19pt;white-space:nowrap;line-height:1.1;letter-spacing:-.02em;margin:4px 0 3px}
+.head .role{font-size:10.5pt;font-weight:600;color:var(--sky-300)}
+.head .rule{width:60px;height:3px;border-radius:2px;background:var(--sky-400);margin:9px 0 8px}
+.head .chips{display:inline-flex;background:var(--blue-600);border-radius:6px;padding:3px 2px;font-size:8pt;font-weight:600}
+.head .chips span{white-space:nowrap;padding:0 7px;border-right:1px solid rgba(255,255,255,.4)}
+.head .chips span:last-child{border:0}
+.head .photo{position:relative;z-index:1;width:27mm;height:27mm;border-radius:50%;object-fit:cover;object-position:50% 30%;border:2.5px solid var(--sky-400);box-shadow:0 0 0 4px rgba(255,255,255,.12)}
+.head .contact{position:relative;z-index:1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:10px 12px;font-size:8.4pt;display:grid;gap:4px;min-width:0}
+.head .contact div{display:grid;line-height:1.25}
+.head .contact b{color:var(--sky-400);font-weight:700;font-size:6.6pt;text-transform:uppercase;letter-spacing:.08em}
+.head .contact a{color:#fff;text-decoration:none}
+
+/* ---------- Titres de section (bandeau rayé) ---------- */
+.sh{display:flex;align-items:center;justify-content:space-between;color:#fff;font-weight:700;font-size:10.5pt;letter-spacing:-.01em;
+  padding:6px 12px;border-radius:6px;margin:14px 0 9px;break-after:avoid;
+  background:linear-gradient(108deg,var(--navy-800) 0 62%,transparent 62%),
+    linear-gradient(108deg,transparent 0 70%,var(--navy-700) 70% 72%,transparent 72% 80%,var(--navy-600) 80% 82%,transparent 82% 90%,var(--blue-600) 90% 92%,transparent 92%),
+    linear-gradient(90deg,var(--navy-800),var(--navy-600))}
+.sh small{font-size:7.5pt;font-weight:500;opacity:.85}
+
+/* ---------- Synthèse ---------- */
+.profile{display:grid;grid-template-columns:1.5fr 1fr;gap:14px}
+.profile p{color:var(--ink-2);text-align:justify}
+.profile p+p{margin-top:5px}
+.facts{list-style:none;background:var(--ice-50);border:1px solid var(--line);border-radius:8px;padding:8px 11px;display:grid;gap:3px;font-size:8.6pt}
+.facts li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:3px}
+.facts li:last-child{border:0;padding:0}
+.facts span{color:var(--muted)}
+.facts b{text-align:right;color:var(--navy-900);font-weight:600}
+
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:11px}
+.kpi{padding:8px 9px;border-right:1px solid var(--line)}
+.kpi:last-child{border:0}
+.kpi:before{content:"";display:block;width:18px;height:2.5px;border-radius:2px;background:var(--sky-400);margin-bottom:5px}
+.kpi b{display:block;font-size:14pt;font-weight:800;color:var(--navy-800);line-height:1.1}
+.kpi span{font-size:7.6pt;color:var(--ink-2);line-height:1.25;display:block}
+
+/* Domaines de compétences */
+.domains{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.dom{border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;gap:9px;break-inside:avoid}
+.ico{width:24px;height:24px;border-radius:6px;background:var(--navy-800);color:#fff;display:grid;place-items:center;font-size:9pt;font-weight:700;flex-shrink:0}
+.dom h3{font-size:9.4pt;color:var(--navy-900);display:flex;justify-content:space-between;gap:6px;align-items:center}
+.dom p{font-size:8.3pt;color:var(--ink-2);margin-top:2px}
+.badge{font-size:7pt;font-weight:700;color:#fff;background:var(--navy-800);padding:2px 7px;border-radius:4px;white-space:nowrap}
+.badge.c{background:var(--blue-600)}
+
+/* Secteurs */
+.sec-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:12px}
+.bar-row{display:grid;grid-template-columns:44mm 1fr 15mm;gap:8px;align-items:center;padding:3px 0;font-size:8.6pt}
+.bar-row b{font-weight:600}
+.bar-row small{display:block;color:var(--muted);font-size:7.4pt}
+.bar{height:7px;background:var(--ice-100);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,var(--navy-800),var(--blue-500))}
+.bar-row .v{text-align:right;font-weight:700;color:var(--navy-800)}
+.edu{list-style:none;display:grid;gap:4px;font-size:8.6pt}
+.edu li{display:grid;grid-template-columns:15mm 1fr;gap:6px}
+.edu .y{font-weight:700;color:var(--blue-600)}
+.edu small{display:block;color:var(--muted);font-size:7.6pt}
+.mini-h{font-size:8pt;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue-600);margin:0 0 5px}
+
+/* ---------- Matrice ---------- */
+table{width:100%;border-collapse:collapse;font-size:8.5pt}
+thead th{background:var(--navy-800);color:#fff;text-align:left;font-size:7.4pt;text-transform:uppercase;letter-spacing:.06em;padding:5px 8px;font-weight:600}
+thead th:nth-child(n+2){text-align:center}
+tbody td{padding:3.6px 8px;border-bottom:1px solid var(--line)}
+tbody td:nth-child(n+2){text-align:center}
+tbody tr:nth-child(even) td{background:var(--ice-50)}
+tr.grp td{background:var(--ice-100)!important;font-weight:700;color:var(--navy-800);font-size:8pt;text-transform:uppercase;letter-spacing:.05em;padding:4px 8px;text-align:left!important}
+tr{break-inside:avoid}
+.lvl{display:inline-flex;gap:2.5px;vertical-align:middle}
+.lvl i{width:7px;height:7px;border-radius:50%;background:var(--line)}
+.lvl i.on{background:var(--blue-500)}
+.lvl.x i.on{background:var(--navy-800)}
+.legend{display:flex;gap:14px;justify-content:flex-end;font-size:7.4pt;color:var(--muted);margin-top:5px}
+.legend span{display:inline-flex;gap:5px;align-items:center}
+
+/* Bloc IA */
+.ai{border-radius:9px;color:#fff;padding:11px 13px;display:grid;grid-template-columns:1fr 1.45fr;gap:12px;break-inside:avoid;margin-top:4px;
+  background:radial-gradient(circle at 95% 0%,rgba(90,170,232,.35),transparent 50%),linear-gradient(135deg,var(--navy-700),var(--navy-900))}
+.ai h3{font-size:10.5pt}
+.ai .tag-new{display:inline-block;font-size:6.8pt;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--sky-400);color:var(--navy-900);padding:2px 6px;border-radius:4px;margin-bottom:5px}
+.ai p{font-size:8.3pt;color:#c9d8ea;margin-top:4px}
+.ai-uses{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.ai-use{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:6px 8px;font-size:7.9pt;color:#c9d8ea}
+.ai-use b{display:block;color:#fff;font-size:8.4pt}
+.ai-use b:before{content:"◆ ";color:var(--sky-400)}
+.ai .tools{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+.ai .tools span{font-size:7.4pt;font-weight:600;padding:2px 7px;border-radius:99px;border:1px solid rgba(255,255,255,.25)}
+.ai .tools span.hl{background:var(--sky-400);color:var(--navy-900);border-color:var(--sky-400)}
+
+/* ---------- Synthèse missions ---------- */
+.recap td:nth-child(n+2){text-align:left}
+.recap td:first-child{white-space:nowrap}
+.recap thead th{text-align:left!important}
+.pill{display:inline-block;font-size:7.2pt;font-weight:600;background:var(--blue-600);color:#fff;padding:1px 6px;border-radius:4px;white-space:nowrap}
+
+/* ---------- Missions détaillées ---------- */
+.mis{border:1px solid var(--line);border-radius:9px;overflow:hidden;margin-bottom:10px;break-inside:avoid}
+.mis-h{display:grid;grid-template-columns:34mm 1fr auto;align-items:center;gap:12px;padding:8px 12px;color:#fff;
+  background:linear-gradient(108deg,var(--navy-800) 0 70%,var(--navy-700) 70% 72%,var(--navy-800) 72% 80%,var(--navy-600) 80% 82%,var(--navy-800) 82%)}
+.mis-h .when{font-size:8pt;font-weight:600;color:var(--sky-300);line-height:1.3}
+.mis-h .when small{display:block;color:#c9d8ea;font-weight:500}
+.mis-h h3{font-size:11pt;letter-spacing:-.01em}
+.mis-h h3 span{color:var(--sky-400);font-weight:600}
+.mis-h .sub{font-size:8pt;color:#c9d8ea}
+.mis-h .sect{font-size:7.4pt;font-weight:700;background:var(--sky-400);color:var(--navy-900);padding:2px 8px;border-radius:4px;white-space:nowrap}
+.mis-b{display:grid;grid-template-columns:1fr 58mm;gap:0}
+.mis-main{padding:9px 12px}
+.mis-main h4,.mis-env h4{font-size:7.6pt;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue-600);margin:6px 0 3px}
+.mis-main h4:first-child,.mis-env h4:first-child{margin-top:0}
+.mis-main p{color:var(--ink-2);font-size:8.8pt}
+.mis-main ul{padding-left:14px;font-size:8.8pt;display:grid;gap:1px}
+.mis-main ul li::marker{color:var(--navy-800)}
+.result{margin-top:7px;background:var(--ice-100);border-left:3px solid var(--blue-500);border-radius:0 6px 6px 0;padding:5px 9px;font-size:8.7pt}
+.result b{color:var(--navy-800)}
+.mis-env{background:var(--ice-50);border-left:1px solid var(--line);padding:9px 11px;font-size:8.2pt}
+.mis-env dl{display:grid;gap:4px}
+.mis-env dt{font-weight:700;color:var(--navy-800);font-size:7.6pt}
+.mis-env dd{color:var(--ink-2)}
+.chips2{display:flex;flex-wrap:wrap;gap:3px;margin-top:1px}
+.chips2 span{font-size:7.4pt;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:4px;padding:0 5px;color:var(--ink)}
+.chips2 span.k{background:var(--navy-800);border-color:var(--navy-800);color:#fff}
+
+/* ---------- Atouts ---------- */
+.end{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.check{list-style:none;display:grid;gap:3px;font-size:8.7pt}
+.check li:before{content:"✓";color:var(--blue-600);font-weight:800;margin-right:6px}
+.contact-box{border-radius:9px;color:#fff;padding:12px 14px;background:linear-gradient(150deg,var(--navy-700),var(--navy-900));font-size:8.8pt;display:grid;gap:4px;align-content:start}
+.contact-box h3{font-size:10.5pt;margin-bottom:3px}
+.contact-box b{color:var(--sky-400);display:inline-block;width:78px;font-weight:600}
+.contact-box a{color:#fff;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="tools-bar no-print">
+  <button onclick="window.print()">🖨 Imprimer / Enregistrer en PDF</button>
+  <a href="index.html">← Retour au portfolio</a>
+</div>
+
+<div class="doc">
+
+<!-- ================= PAGE 1 : SYNTHÈSE ================= -->
+<header class="head">
+  <img class="photo" src="img/photo-ibrahim.jpg" alt="Photo de profil d'Ibrahim Soumana Harouna">
+  <div>
+    <p class="kicker">Dossier de compétences</p>
+    <h1>Ibrahim Soumana Harouna</h1>
+    <p class="role">Senior QA Automation Engineer &amp; Lead QA</p>
+    <div class="rule"></div>
+    <div class="chips"><span>11 ans d'expérience</span><span>Web · Mobile · API</span><span>ISTQB</span></div>
+  </div>
+  <div class="contact">
+    <div><b>E-mail</b><a href="mailto:soumanaharouna@gmail.com">soumanaharouna@gmail.com</a></div>
+    <div><b>Téléphone</b><a href="tel:+33650699124">+33 6 50 69 91 24</a></div>
+    <div><b>Localisation</b>Nantes · hybride / télétravail</div>
+    <div><b>Disponibilité</b>Immédiate</div>
+  </div>
+</header>
+
+<div class="sh">01. Profil &amp; positionnement</div>
+<div class="profile">
+  <div>
+    <p>Ingénieur QA avec <strong>11 ans d'expérience</strong>, j'interviens sur toute la chaîne de la qualité logicielle, de la <strong>stratégie de test</strong> à l'<strong>automatisation</strong> et au <strong>pilotage de la recette</strong>. J'ai travaillé sur des applications critiques dans l'assurance, la santé, la banque et les télécoms.</p>
+    <p>Côté technique, j'automatise les tests web, mobile et API avec <strong>Playwright, Cypress, Robot Framework, Katalon, Postman et Bruno</strong>, et je les intègre à la chaîne CI/CD. J'utilise l'<strong>IA générative</strong> pour accélérer la conception et la maintenance des tests. En tant que Lead QA, j'ai mis en place, en partant de zéro, la démarche qualité de deux entreprises et piloté des équipes de recette jusqu'à 4 testeurs.</p>
+  </div>
+  <ul class="facts">
+    <li><span>Postes</span><b>QA Automaticien · Lead QA · Pilote de recette</b></li>
+    <li><span>Expérience</span><b>11 ans (depuis 2015)</b></li>
+    <li><span>Certification</span><b>ISTQB Foundation Level</b></li>
+    <li><span>Méthodes</span><b>Scrum · SAFe · Kanban</b></li>
+    <li><span>Formation</span><b>Master MIAGE</b></li>
+    <li><span>Références</span><b>Orange, Assurance Maladie, La Poste, Renault</b></li>
+  </ul>
+</div>
+
+<div class="kpis">
+  <div class="kpi"><b>11 ans</b><span>d'expérience en QA</span></div>
+  <div class="kpi"><b>11 ans</b><span>de tests d'API</span></div>
+  <div class="kpi"><b>11 ans</b><span>de tests fonctionnels</span></div>
+  <div class="kpi"><b>8 ans</b><span>d'automatisation web</span></div>
+  <div class="kpi"><b>6 ans</b><span>de tests mobiles</span></div>
+  <div class="kpi"><b>4 ans</b><span>de Lead QA</span></div>
+</div>
+
+<div class="sh">02. Domaines de compétences</div>
+<div class="domains">
+  <div class="dom"><span class="ico">&lt;/&gt;</span><div><h3>Automatisation UI web &amp; mobile <span class="badge c">Confirmé</span></h3><p>Playwright, Cypress, Robot Framework / Selenium, Katalon, Appium, BrowserStack, Cucumber (BDD)</p></div></div>
+  <div class="dom"><span class="ico">⇄</span><div><h3>Tests d'API <span class="badge">Expert</span></h3><p>REST, SOAP, FHIR : Postman, Bruno, SoapUI (Groovy), contrôles SQL</p></div></div>
+  <div class="dom"><span class="ico">✓</span><div><h3>Tests fonctionnels &amp; recette <span class="badge">Expert</span></h3><p>Analyse, conception, exécution, TNR, tests métier, intégration, système et acceptation</p></div></div>
+  <div class="dom"><span class="ico">◎</span><div><h3>Stratégie &amp; pilotage QA <span class="badge">Expert</span></h3><p>Politique et stratégie de test, plans de test, équipes de recette, comité de mise en production</p></div></div>
+  <div class="dom"><span class="ico">☰</span><div><h3>Gestion des tests <span class="badge">Expert</span></h3><p>Jira Xray, Squash TM (référent et formateur), HP ALM, TFS, Confluence</p></div></div>
+  <div class="dom"><span class="ico">✦</span><div><h3>IA &amp; CI/CD <span class="badge c">Confirmé</span></h3><p>IA générative appliquée aux tests, Jenkins, Git / GitLab CI, accessibilité RGAA</p></div></div>
+</div>
+
+<div class="avoid">
+  <div>
+    <div class="sh">03. Secteurs d'activité <small>Années d'expérience cumulées par secteur</small></div>
+    <div class="bar-row"><div><b>Télécoms</b><small>Orange</small></div><div class="bar"><i style="width:100%"></i></div><span class="v">3,5 ans</span></div>
+    <div class="bar-row"><div><b>Santé · Protection sociale</b><small>Assurance Maladie</small></div><div class="bar"><i style="width:72%"></i></div><span class="v">2,5 ans</span></div>
+    <div class="bar-row"><div><b>Banque · Fintech</b><small>Noelse, La Poste</small></div><div class="bar"><i style="width:64%"></i></div><span class="v">2+ ans</span></div>
+    <div class="bar-row"><div><b>Assurance · Mutuelle</b><small>Kereis, ASSIA, La Poste</small></div><div class="bar"><i style="width:56%"></i></div><span class="v">2 ans</span></div>
+    <div class="bar-row"><div><b>Automobile</b><small>Renault</small></div><div class="bar"><i style="width:12%"></i></div><span class="v">4 mois</span></div>
+  </div>
+</div>
+
+<!-- ================= PAGE 2 : MATRICE ================= -->
+<div class="sh pb">04. Matrice de compétences <small>Années de pratique · niveau · dernière utilisation</small></div>
+<table class="matrix">
+  <thead><tr><th style="width:46%">Compétence</th><th>Années</th><th>Niveau</th><th>Dernière utilisation</th></tr></thead>
+  <tbody>
+    <tr class="grp"><td colspan="4">Automatisation UI web &amp; mobile</td></tr>
+    <tr><td>Robot Framework / Selenium</td><td>4</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2025</td></tr>
+    <tr><td>Gherkin / Cucumber (BDD)</td><td>3</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2021</td></tr>
+    <tr><td>Katalon Studio</td><td>2</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2024</td></tr>
+    <tr><td>Playwright</td><td>1</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2025</td></tr>
+    <tr><td>Cypress</td><td>1</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2025</td></tr>
+    <tr><td>Appium (iOS / Android)</td><td>1,5</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td>2021</td></tr>
+    <tr><td>BrowserStack</td><td>3</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2024</td></tr>
+    <tr class="grp"><td colspan="4">Tests d'API</td></tr>
+    <tr><td>Postman</td><td>11</td><td><span class="lvl x"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td>2025</td></tr>
+    <tr><td>Bruno</td><td>2</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2025</td></tr>
+    <tr><td>SoapUI (scripts Groovy)</td><td>2</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2020</td></tr>
+    <tr><td>API FHIR / PHD (santé)</td><td>2,5</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2024</td></tr>
+    <tr><td>SQL</td><td>4</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2021</td></tr>
+    <tr class="grp"><td colspan="4">Gestion des tests &amp; outillage</td></tr>
+    <tr><td>Jira / Xray</td><td>11</td><td><span class="lvl x"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td>2024</td></tr>
+    <tr><td>Squash TM (référent &amp; formateur)</td><td>3</td><td><span class="lvl x"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td>2025</td></tr>
+    <tr><td>HP ALM / Quality Center</td><td>4</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2024</td></tr>
+    <tr><td>TFS / Azure DevOps</td><td>2</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2019</td></tr>
+    <tr><td>Confluence</td><td>3</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2024</td></tr>
+    <tr><td>Jenkins, Git / GitLab CI</td><td>—</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2025</td></tr>
+    <tr class="grp"><td colspan="4">Méthodes &amp; autres</td></tr>
+    <tr><td>Scrum · SAFe · Kanban</td><td>11</td><td><span class="lvl x"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td>2025</td></tr>
+    <tr><td>Accessibilité RGAA / WCAG (Wave, Tag Inspector)</td><td>2,5</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2024</td></tr>
+    <tr><td>IA générative appliquée aux tests</td><td>—</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>2025</td></tr>
+    <tr><td>K2 BPM · Java</td><td>1</td><td><span class="lvl"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td>2019</td></tr>
+  </tbody>
+</table>
+<div class="legend">
+  <span><span class="lvl x"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span> Expert</span>
+  <span><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span> Confirmé</span>
+  <span><span class="lvl"><i class="on"></i><i class="on"></i><i></i><i></i></span> Familier</span>
+</div>
+
+<div class="sh">05. IA au service de l'automatisation</div>
+<div class="ai">
+  <div>
+    <span class="tag-new">Automatisation augmentée</span>
+    <h3>Plus de couverture, moins de maintenance</h3>
+    <p>J'utilise l'IA générative comme un accélérateur. Je garde la main sur la stratégie et je relis tout le code produit, qui suit les standards de l'équipe (revue, CI, conventions).</p>
+    <div class="tools"><span class="hl">Playwright</span><span class="hl">GitHub Copilot</span><span>ChatGPT</span><span>Claude</span><span>Prompt engineering</span></div>
+  </div>
+  <div class="ai-uses">
+    <div class="ai-use"><b>Conception des tests</b>Scénarios et cas Gherkin générés à partir des user stories</div>
+    <div class="ai-use"><b>Écriture des scripts</b>Tests Playwright / Cypress, page objects, sélecteurs robustes</div>
+    <div class="ai-use"><b>Données &amp; API</b>Jeux de données, assertions et collections d'API</div>
+    <div class="ai-use"><b>Analyse des échecs</b>Diagnostic des tests instables, logs, rédaction des anomalies</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 3 : PARCOURS ================= -->
+<div class="sh pb">06. Synthèse des missions</div>
+<table class="recap">
+  <thead><tr><th>Période</th><th>Client</th><th>Rôle</th><th>Secteur</th><th>Environnement clé</th></tr></thead>
+  <tbody>
+    <tr><td>07/25 – 12/25</td><td><b>Kereis</b></td><td>QA Automaticien</td><td><span class="pill">Assurance</span></td><td>Cypress, Playwright, Bruno, Postman</td></tr>
+    <tr><td>04/24 – 06/25</td><td><b>ASSIA</b></td><td>Lead QA</td><td><span class="pill">Mutuelle</span></td><td>Robot Framework, Postman, Squash TM</td></tr>
+    <tr><td>09/21 – 04/24</td><td><b>Assurance Maladie</b> (Atos)</td><td>QA Senior</td><td><span class="pill">Santé</span></td><td>Katalon, BrowserStack, Postman, Xray</td></tr>
+    <tr><td>03/20 – 08/21</td><td><b>Noelse</b> (Daveo)</td><td>Lead QA</td><td><span class="pill">Néobanque</span></td><td>Appium, Cucumber, Selenium, Squash TM</td></tr>
+    <tr><td>05/19 – 02/20</td><td><b>La Poste</b> (CGI)</td><td>Pilote de recette</td><td><span class="pill">Banque · Assurance</span></td><td>Robot Framework, Selenium, SoapUI</td></tr>
+    <tr><td>01/19 – 04/19</td><td><b>Renault</b> (LCF)</td><td>Référent testeur</td><td><span class="pill">Automobile</span></td><td>K2 BPM, TFS</td></tr>
+    <tr><td>09/15 – 12/18</td><td><b>Orange</b> (OAB)</td><td>Ingénieur test → Resp. QV</td><td><span class="pill">Télécoms</span></td><td>Robot Framework, SoapUI, Squash TM</td></tr>
+  </tbody>
+</table>
+
+<div class="sec-grid avoid">
+  <div>
+    <div class="sh">07. Formation</div>
+    <ul class="edu">
+      <li><span class="y">2015</span><div><b>Master MIAGE</b><small>Université de Haute-Alsace, Mulhouse</small></div></li>
+      <li><span class="y">2013</span><div><b>Master Systèmes</b><small>Université de Franche-Comté, Besançon</small></div></li>
+      <li><span class="y">2011</span><div><b>Licence Informatique</b><small>Université de Mostaganem, Algérie</small></div></li>
+    </ul>
+  </div>
+  <div>
+    <div class="sh">08. Certifications</div>
+    <ul class="edu">
+      <li><span class="y">2017</span><div><b>ISTQB® Certified Tester — Foundation Level</b></div></li>
+      <li><span class="y">2019</span><div><b>Certification K2</b><small>BPM low-code</small></div></li>
+      <li><span class="y">2022</span><div><b>Certification Data Manager</b></div></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= MISSIONS DÉTAILLÉES ================= -->
+<div class="sh">09. Expériences professionnelles détaillées</div>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Juil. 2025 – déc. 2025<small>6 mois</small></div><div><h3>QA Automaticien <span>· Kereis</span></h3><div class="sub">Nantes · courtier et gestionnaire en assurance</div></div><span class="sect">Assurance emprunteur</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>Kereis France est courtier-conseil et gestionnaire en assurance emprunteur, prévoyance individuelle et assurance des financements. Tests fonctionnels manuels et automatisés de 4 applications web et de leurs API.</p>
+      <h4>Réalisations</h4>
+      <ul><li>Exécution des tests et gestion des anomalies</li><li>Automatisation des tests fonctionnels en Cypress</li><li>Lancement de la migration de Cypress vers Playwright</li><li>Automatisation des tests d'API avec Bruno</li><li>Migration des collections Postman vers Bruno</li><li>Référent et formateur Squash TM, tests métier</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> plus de 500 requêtes API migrées de Postman vers Bruno.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Méthodologie</dt><dd>Kanban</dd>
+      <dt>Outils</dt><dd class="chips2"><span class="k">Cypress</span><span class="k">Playwright</span><span class="k">Bruno</span><span>Postman</span><span>Squash TM</span></dd>
+      <dt>Applications</dt><dd>Web, API</dd>
+      <dt>Niveaux de test</dt><dd>Intégration, tests métier, TNR</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Avr. 2024 – juin 2025<small>15 mois</small></div><div><h3>Lead QA <span>· ASSIA</span></h3><div class="sub">Quimper · éditeur SaaS pour mutuelles et assureurs</div></div><span class="sect">Mutuelle · SaaS</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>ASSIA conçoit des plateformes SaaS pour les mutuelles, assureurs, courtiers et institutions de prévoyance. Pilotage des tests manuels et automatisés d'un projet de refonte.</p>
+      <h4>Réalisations</h4>
+      <ul><li>Politique, stratégie et plan de test créés de zéro</li><li>Pilotage de l'équipe de recette</li><li>Analyse, conception et exécution des tests</li><li>Gestion des environnements et des anomalies</li><li>Automatisation des API avec Postman</li><li>Automatisation de l'application web avec Robot Framework, suivi des releases</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> démarche qualité du groupe créée de zéro, équipe de testeurs constituée et qualité des livrables améliorée.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Méthodologie</dt><dd>Scrum</dd>
+      <dt>Outils</dt><dd class="chips2"><span class="k">Robot Framework</span><span class="k">Postman</span><span>Squash TM</span></dd>
+      <dt>Applications</dt><dd>Web, API</dd>
+      <dt>Niveaux de test</dt><dd>Intégration, tests métier</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Sept. 2021 – avr. 2024<small>2 ans 8 mois</small></div><div><h3>QA Senior <span>· Assurance Maladie</span></h3><div class="sub">Nantes · via Atos</div></div><span class="sect">Santé</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>«&nbsp;Mon Espace Santé&nbsp;» permet à chaque citoyen de gérer ses données médicales en ligne de façon sécurisée. Le Dossier médical partagé (DMP) les rend accessibles aux professionnels de santé. Tests des applications mobiles et web, et des API du DMP.</p>
+      <h4>Réalisations</h4>
+      <ul><li>Analyse, conception et exécution des tests</li><li>Gestion des environnements et des anomalies</li><li>Automatisation des API avec Postman, y compris FHIR / Personal Health Device</li><li>Automatisation web et mobile avec Katalon et BrowserStack</li><li>Tests d'accessibilité et tests des logiciels destinés aux professionnels de santé</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> audit d'accessibilité réussi et tests automatisés sur une plateforme nationale.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Méthodologie</dt><dd>Scrum, SAFe</dd>
+      <dt>Outils</dt><dd class="chips2"><span class="k">Katalon</span><span class="k">Postman</span><span>BrowserStack</span><span>Robot Framework</span><span>Wizard</span><span>ALM</span><span>Jira Xray</span><span>Confluence</span></dd>
+      <dt>Applications</dt><dd>Android, iOS, Web, API</dd>
+      <dt>Niveaux de test</dt><dd>Intégration, système, acceptation</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Mars 2020 – août 2021<small>1 an 6 mois</small></div><div><h3>Lead QA <span>· Noelse</span></h3><div class="sub">via Daveo · néobanque du groupe Afone</div></div><span class="sect">Néobanque</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>Néobanque française proposant des services bancaires en ligne aux particuliers et aux professionnels. Pilotage des tests manuels et automatisés des applications mobiles et web, et de l'équipe de recette.</p>
+      <h4>Réalisations</h4>
+      <ul><li>Rédaction de la politique, de la stratégie et des plans de test</li><li>Pilotage d'une équipe de recette de 4 personnes, conseil au recrutement</li><li>Gestion des anomalies de recette et de production</li><li>Gestion des environnements, des jeux de données et des mises en production</li><li>Suivi des tests automatisés de l'équipe</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> stratégie de test créée de zéro, équipe de 3 testeurs et 1 stagiaire constituée, comité de mise en production instauré (Lead QA, Tech Lead, PO, décideurs).</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Outils de test</dt><dd class="chips2"><span class="k">Appium</span><span class="k">Cucumber</span><span>Selenium</span><span>Squash TM</span><span>Jira Xray</span></dd>
+      <dt>Autres</dt><dd>TestFlight, Postman, SQL, PuTTY, FileZilla</dd>
+      <dt>Applications</dt><dd>Android, iOS, Web, API, KYC</dd>
+      <dt>Niveaux de test</dt><dd>Intégration, système, acceptation utilisateur</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Mai 2019 – févr. 2020<small>10 mois</small></div><div><h3>Pilote de recette <span>· La Poste</span></h3><div class="sub">via CGI · La Poste Solutions Business</div></div><span class="sect">Banque · Assurance</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>Marque B2B du groupe La Poste, au service des entreprises, collectivités et administrations. Tests fonctionnels et automatisés des applications PC, mobiles et web (assurance et guichet).</p>
+      <h4>Réalisations</h4>
+      <ul><li>Analyse, conception et exécution des tests</li><li>Pilotage de la recette</li><li>Gestion des environnements, des jeux de données et des anomalies</li><li>Mise en place de l'automatisation des tests</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> CGI a remporté un projet grâce au POC d'automatisation que j'ai réalisé.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Outils de test</dt><dd class="chips2"><span class="k">Robot Framework</span><span class="k">Selenium</span><span>SoapUI</span><span>Squash TM</span><span>Jira</span><span>Mantis</span></dd>
+      <dt>Applications</dt><dd>Android, iOS, Web, client lourd</dd>
+      <dt>Niveaux de test</dt><dd>Intégration, système, acceptation</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Janv. 2019 – avr. 2019<small>4 mois</small></div><div><h3>Référent testeur <span>· Renault</span></h3><div class="sub">via Low Code Factory by K2</div></div><span class="sect">Automobile</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>K2 est une plateforme low-code de modélisation et d'automatisation des processus métier. Pilotage des tests fonctionnels de tous les projets BPM K2.</p>
+      <h4>Réalisations</h4>
+      <ul><li>Élaboration de la stratégie et organisation des tests</li><li>Conception et exécution des tests, gestion des jeux de données</li><li>Intégration et développement K2, gestion des anomalies</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> nouvelle méthode de test des solutions BPM, fondée sur la théorie des graphes.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Outils</dt><dd class="chips2"><span class="k">K2 BPM</span><span>TFS</span></dd>
+      <dt>Niveaux de test</dt><dd>Intégration, système, acceptation</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Janv. 2018 – déc. 2018<small>1 an</small></div><div><h3>Responsable qualification &amp; validation <span>· Orange</span></h3><div class="sub">Orange Applications for Business</div></div><span class="sect">Télécoms</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>Pilotage des tests fonctionnels et automatisés d'un ensemble d'applications mobiles (iOS, Android, Windows) B2B, B2C et B2E.</p>
+      <h4>Réalisations</h4>
+      <ul><li>Stratégie, conception et exécution des tests</li><li>Pilotage du projet de test, gestion des environnements</li><li>Automatisation des tests de web services avec SoapUI (Groovy)</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> succès commercial des applications.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Méthodologie</dt><dd>Scrum, TDD</dd>
+      <dt>Outils</dt><dd class="chips2"><span class="k">SoapUI</span><span>TFS</span><span>Jira</span><span>Squash TM</span><span>Alfresco</span></dd>
+      <dt>Applications</dt><dd>Android, iOS, Web</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Avr. 2016 – déc. 2017<small>1 an 9 mois</small></div><div><h3>Ingénieur test &amp; qualification <span>· Orange</span></h3><div class="sub">Orange Applications for Business</div></div><span class="sect">Télécoms</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>Tests fonctionnels et automatisés d'une application web permettant de construire son propre serveur vocal interactif.</p>
+      <h4>Réalisations</h4>
+      <ul><li>Stratégie de test, analyse fonctionnelle et technique des tests</li><li>Conception des tests en TDD</li><li>Automatisation en Keyword-Driven Testing (Robot Framework)</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> 90 % des tests de non-régression automatisés.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Méthodologie</dt><dd>Scrum, TDD, KDT</dd>
+      <dt>Outils</dt><dd class="chips2"><span class="k">Robot Framework</span><span class="k">Selenium</span><span>Squash TM</span><span>Jira</span></dd>
+      <dt>Applications</dt><dd>Android, iOS, Web</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Sept. 2015 – mars 2016<small>7 mois</small></div><div><h3>Ingénieur test &amp; qualification <span>· Orange</span></h3><div class="sub">Orange Applications for Business</div></div><span class="sect">Télécoms</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Contexte</h4>
+      <p>Tests fonctionnels d'applications PC, web et mobiles permettant de gérer le contenu stocké sur une Livebox Orange.</p>
+      <h4>Réalisations</h4>
+      <ul><li>Conception et exécution des tests</li><li>Gestion des jeux de données et des anomalies</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> la Livebox a connu un succès commercial.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Outils</dt><dd class="chips2"><span>Quality Center</span><span>Mantis</span><span>Jira</span></dd>
+      <dt>Niveaux de test</dt><dd>Système, acceptation</dd></dl></div>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="mis-h"><div class="when">Mars 2015 – août 2015<small>6 mois · stage</small></div><div><h3>Développeur Java <span>· Orange</span></h3><div class="sub">Orange OLPS · stage de fin d'études</div></div><span class="sect">Télécoms</span></div>
+  <div class="mis-b">
+    <div class="mis-main">
+      <h4>Réalisations</h4>
+      <ul><li>Conception et développement d'une API Java qui extrait des données de fichiers Excel pour un serveur vocal interactif</li><li>Intégration et déploiement sur les serveurs</li></ul>
+      <p class="result"><b>Résultat&nbsp;:</b> l'API a été mise en production.</p>
+    </div>
+    <div class="mis-env"><h4>Environnement</h4><dl>
+      <dt>Technologies</dt><dd class="chips2"><span class="k">Java</span><span>UML</span><span>Eclipse</span><span>PuTTY</span></dd></dl></div>
+  </div>
+</article>
+
+<div class="end avoid">
+  <div>
+    <div class="sh">10. Atouts</div>
+    <ul class="check">
+      <li>Vision globale de la qualité, de la stratégie à la mise en production</li>
+      <li>Solide expérience en automatisation et en tests d'API</li>
+      <li>Capacité à monter et encadrer une équipe de recette</li>
+      <li>Habitué aux secteurs réglementés (santé, banque, assurance)</li>
+      <li>Pédagogue : référent et formateur d'outils</li>
+    </ul>
+  </div>
+  <div>
+    <div class="sh">11. Contact</div>
+    <div class="contact-box">
+      <h3>Ibrahim Soumana Harouna</h3>
+      <div><b>E-mail</b><a href="mailto:soumanaharouna@gmail.com">soumanaharouna@gmail.com</a></div>
+      <div><b>Téléphone</b><a href="tel:+33650699124">+33 6 50 69 91 24</a></div>
+      <div><b>Localisation</b>Nantes · hybride / télétravail</div>
+      <div><b>Disponibilité</b>Immédiate</div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

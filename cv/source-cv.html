@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CV — Ibrahim Soumana Harouna</title>
+<style>
+:root{--teal:#416b7b;--teal-d:#35596a;--wine:#9b2335;--blue:#1f6fb2;--ink:#111;--gray:#555;--line:#a9c6d2}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+@page{size:A4;margin:16mm 16mm 16mm 18mm;
+  @bottom-right{content:"Page " counter(page) " | " counter(pages);font:9pt Arial,sans-serif;color:#888}}
+body{font-family:"Times New Roman",Times,serif;font-size:11.5pt;line-height:1.3;color:var(--ink)}
+.pb{break-before:page}
+.avoid{break-inside:avoid}
+ul{padding-left:20px}
+li{margin:1px 0}
+
+/* ---------- En-tête ---------- */
+.head{display:grid;grid-template-columns:1fr 36mm;gap:10mm;align-items:start}
+.head h1{font-family:Arial,sans-serif;font-size:19pt;color:var(--gray);font-weight:700}
+.head .addr{font-family:Arial,sans-serif;font-size:11pt;color:var(--gray);margin-top:2px;line-height:1.35}
+.head .addr b{font-weight:700}
+.head img{width:36mm;height:36mm;object-fit:cover;object-position:50% 25%;display:block}
+.intro{margin:7mm 0 4mm;text-align:justify;max-width:132mm}
+
+/* ---------- Colonnes avec barre latérale ---------- */
+.cols{display:grid;grid-template-columns:1fr 64mm;gap:8mm;align-items:start}
+.side{background:var(--teal);color:#fff;padding:7mm 5mm 8mm;border:1px solid var(--teal-d);box-shadow:2px 2px 0 #8aa5b0}
+.side h3{font-weight:700;font-size:11.5pt;text-transform:uppercase;margin:10px 0 6px;text-align:center}
+.side h3:first-child{margin-top:0}
+.side ul{list-style:none;padding:0}
+.side li{margin:4px 0;font-size:11pt}
+.side li:before{content:"•";margin-right:6px}
+.side.big li{font-size:12.5pt;margin:5px 0}
+
+h2{color:var(--wine);font-size:12.5pt;text-transform:uppercase;font-weight:700;margin:0 0 10px}
+.job{margin:0 0 12px}
+.job b{display:block}
+.job ul{margin-top:6px}
+
+/* ---------- Page 3 ---------- */
+h2.big{font-size:15pt;margin:16px 0 12px}
+.edu p{margin:0 0 9px}
+table{width:100%;border-collapse:collapse;font-size:10pt;margin-top:4px}
+th{background:var(--line);color:var(--wine);text-align:left;padding:7px 8px;font-weight:700;text-transform:uppercase;font-size:10pt;vertical-align:bottom}
+td{border:1px solid var(--line);padding:2px 8px}
+tr.grp td{font-weight:700;padding:5px 8px;border-right:0}
+td.n{width:22%}
+.note{font-size:9pt;margin-top:4px}
+.loisirs li b{color:var(--blue)}
+
+/* ---------- Parcours détaillé ---------- */
+.mis{display:grid;grid-template-columns:36mm 1fr;gap:6mm;margin-bottom:9mm;break-inside:avoid}
+.mis .left .co{font-weight:700;color:var(--blue)}
+.mis .left .dt{color:var(--blue);font-size:10.5pt;margin-top:2px}
+.mis .left .co.plain{color:var(--ink);font-weight:400}
+.mis h4{font-family:Arial,sans-serif;font-size:11.5pt;margin-bottom:8px}
+.mis h5{color:var(--blue);font-size:11.5pt;margin:8px 0 3px}
+.mis p{text-align:justify}
+.mis dl li b{font-weight:700}
+</style>
+</head>
+<body>
+
+<!-- ======================= PAGE 1 ======================= -->
+<header class="head">
+  <div>
+    <h1>SOUMANA HAROUNA Ibrahim</h1>
+    <p class="addr"><b>52 rue de la Haluchère<br>44300 Nantes</b><br>Tél. : +33 6 50 69 91 24<br>E-mail : soumanaharouna@gmail.com</p>
+  </div>
+  <img src="../img/photo-ibrahim.jpg" alt="Photo d'Ibrahim Soumana Harouna">
+</header>
+
+<p class="intro">Ingénieur en assurance qualité (QA), j'interviens sur des activités de tests fonctionnels, à la fois manuels et automatisés, appliqués aux applications mobiles, aux interfaces API et aux applications web. Je suis actuellement à la recherche d'une nouvelle opportunité qui me permette de mettre à profit mon expertise dans le domaine des tests fonctionnels.</p>
+
+<div class="cols">
+  <div>
+    <h2>Parcours professionnel</h2>
+    <div class="job"><b>Kereis – 07/25 à 12/25</b><b>QA Automaticien</b>
+      <ul><li>Référent et formateur Squash TM</li><li>Automatisation des tests fonctionnels avec Cypress</li><li>Automatisation des tests d'API</li><li>Migration de Postman vers Bruno</li><li>Tests métier</li></ul></div>
+    <div class="job"><b>ASSIA – 04/24 à 06/25</b><b>Lead QA</b>
+      <ul><li>Rédaction de la politique de test</li><li>Rédaction de la stratégie de test</li><li>Pilotage d'une équipe de 3 testeurs</li><li>Automatisation d'une application web</li><li>Suivi des releases</li></ul></div>
+    <div class="job"><b>Assurance Maladie – 09/21 à 04/24</b><b>QA Senior</b>
+      <ul><li>Analyse et conception des tests</li><li>Implémentation et exécution des tests</li><li>Gestion des anomalies</li><li>Automatisation des tests fonctionnels</li><li>Tests de logiciels pour professionnels de santé</li><li>Tests d'accessibilité</li></ul></div>
+    <div class="job"><b>Noelse – 03/20 à 08/21</b><b>Lead QA</b>
+      <ul><li>Rédaction de la politique de test</li><li>Rédaction de la stratégie de test</li><li>Pilotage d'une équipe de 4 testeurs</li><li>Suivi de la mise en place des tests automatisés</li><li>Qualification des anomalies de production</li><li>Suivi des tests automatisés</li></ul></div>
+  </div>
+  <aside class="side big">
+    <h3>Aperçu de l'expérience</h3>
+    <h3>Outils et frameworks</h3>
+    <ul><li>Robot Framework</li><li>Cypress</li><li>Gherkin – Cucumber</li><li>Katalon</li><li>Postman</li><li>Bruno</li><li>SoapUI</li><li>Jenkins</li><li>Git / GitLab</li><li>SQL</li><li>Squash TM</li><li>ALM</li><li>TFS</li><li>Xray</li><li>Jira</li><li>Confluence</li><li>Alfresco</li><li>BrowserStack</li><li>Wizard</li></ul>
+  </aside>
+</div>
+
+<!-- ======================= PAGE 2 ======================= -->
+<div class="cols pb">
+  <div>
+    <div class="job"><b>CGI – 05/19 à 02/20</b><b>Pilote de recette</b>
+      <ul><li>Rédaction de la stratégie de test</li><li>Exécution des tests</li><li>Gestion des anomalies</li><li>Pilotage de la recette</li><li>Mise en place des tests automatisés</li></ul></div>
+    <div class="job"><b>Low Code Factory – 01/19 à 04/19</b><b>Référent testeur</b>
+      <ul><li>Rédaction de la stratégie de test</li><li>Analyse, conception et exécution des tests</li><li>Intégration et développement K2</li><li>Gestion des anomalies</li></ul></div>
+    <div class="job"><b>Orange – 03/15 à 12/18</b><b>Ingénieur test et qualification</b>
+      <ul><li>Organisation des tests</li><li>Conception des tests</li><li>Exécution des tests</li><li>Gestion des environnements</li><li>Automatisation des tests</li></ul></div>
+  </div>
+  <aside class="side">
+    <h3>Spécialisations fonctionnelles</h3>
+    <ul><li>Gestion de projet</li><li>Recette fonctionnelle</li><li>Pilotage de recette</li></ul>
+    <h3>Spécialisations techniques</h3>
+    <ul><li>Tests d'API</li><li>Tests automatisés</li><li>Intégration continue</li></ul>
+    <h3>Accessibilité</h3>
+    <ul><li>Wave</li><li>Tag Inspector</li></ul>
+    <h3>Secteurs d'intervention</h3>
+    <ul><li>Grand public (villes)</li><li>Sécurité sociale – Santé</li><li>Banque – Assurance</li><li>Opérateurs – Services</li></ul>
+  </aside>
+</div>
+
+<!-- ======================= PAGE 3 ======================= -->
+<div class="pb">
+  <h2 class="big">Scolarité</h2>
+  <div class="edu">
+    <p><b>2013 – 2015</b> : Master MIAGE — Université de Mulhouse</p>
+    <p><b>2011 – 2013</b> : Master Systèmes — Université de Besançon</p>
+    <p><b>2008 – 2011</b> : Licence Informatique — Université de Mostaganem (Algérie)</p>
+  </div>
+  <h2 class="big">Formations</h2>
+  <div class="edu">
+    <p><b>2022</b> : Certification Data Manager</p>
+    <p><b>2019</b> : Certification K2</p>
+    <p><b>2017</b> : Certification ISTQB</p>
+  </div>
+
+  <h2 class="big" style="margin-top:22px">Sommaire des compétences</h2>
+  <table>
+    <thead><tr><th>Compétences</th><th>Nombre d'années</th><th>Niveau de compétence</th></tr></thead>
+    <tbody>
+      <tr class="grp"><td>Compétences techniques</td><td></td><td></td></tr>
+      <tr><td>Robot Framework (Selenium)</td><td class="n">4</td><td class="n">3</td></tr>
+      <tr><td>Bruno</td><td>2</td><td>3</td></tr>
+      <tr><td>Postman</td><td>10</td><td>4</td></tr>
+      <tr><td>Gherkin – Cucumber – Selenium</td><td>3</td><td>3</td></tr>
+      <tr><td>SQL</td><td>4</td><td>3</td></tr>
+      <tr><td>Cypress</td><td>1</td><td>3</td></tr>
+      <tr><td>Katalon</td><td>2</td><td>3</td></tr>
+      <tr><td>Wizard</td><td>1</td><td>3</td></tr>
+      <tr class="grp"><td>Connaissance des applications / outils</td><td></td><td></td></tr>
+      <tr><td>Squash TM</td><td>3</td><td>4</td></tr>
+      <tr><td>Jira Xray</td><td>10</td><td>4</td></tr>
+      <tr><td>TFS</td><td>2</td><td>3</td></tr>
+      <tr><td>BrowserStack</td><td>3</td><td>3</td></tr>
+      <tr><td>Confluence</td><td>3</td><td>3</td></tr>
+      <tr><td>ALM</td><td>4</td><td>3</td></tr>
+      <tr class="grp"><td>Disciplines en technologies de l'information (TI)</td><td></td><td></td></tr>
+      <tr><td>K2</td><td>1</td><td>2</td></tr>
+      <tr><td>Java</td><td>1</td><td>2</td></tr>
+    </tbody>
+  </table>
+  <p class="note">* 1 = de base, 2 = familier, 3 = compétent, 4 = expert</p>
+
+  <h2 class="big" style="margin-top:22px">Loisirs</h2>
+  <ul class="loisirs">
+    <li><b>Voyages :</b> découvrir différentes cultures et traditions</li>
+    <li><b>Sport :</b> football</li>
+    <li><b>Cinéma :</b> action, espionnage, judiciaire</li>
+  </ul>
+</div>
+
+<!-- ======================= PARCOURS DÉTAILLÉ ======================= -->
+<div class="pb">
+<h2 class="big" style="margin-top:0">Parcours professionnel détaillé</h2>
+
+<article class="mis">
+  <div class="left"><div class="co">Kereis</div><div class="dt">De juil. 2025 à déc. 2025</div></div>
+  <div>
+    <h4>QA Automaticien chez Kereis à Nantes</h4>
+    <h5>Contexte</h5>
+    <p>Kereis France est courtier-conseil et gestionnaire en assurance emprunteur, prévoyance individuelle et assurance des financements.</p>
+    <p>En charge :</p>
+    <ul><li>des tests fonctionnels manuels et automatisés de 4 applications web ;</li><li>des tests fonctionnels automatisés d'API.</li></ul>
+    <h5>Actions</h5>
+    <ul><li>Exécution des tests</li><li>Automatisation des tests avec Cypress</li><li>Gestion des anomalies</li><li>Automatisation des API avec Bruno</li><li>Migration des collections Postman vers Bruno</li></ul>
+    <h5>Résultats</h5>
+    <p>Migration de plus de 500 requêtes de Postman vers Bruno.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Méthodologie :</b> Kanban</li><li><b>Gestionnaire de tests :</b> Squash TM</li><li><b>Autres outils :</b> Cypress, Postman, Bruno</li><li><b>Types d'application :</b> Web, API</li><li><b>Niveaux de test :</b> tests d'intégration, tests métier, TNR</li><li><b>Secteur d'activité :</b> assurance emprunteur</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">ASSIA</div><div class="dt">D'avr. 2024 à juin 2025</div></div>
+  <div>
+    <h4>Lead QA chez ASSIA à Quimper</h4>
+    <h5>Contexte</h5>
+    <p>ASSIA conçoit des plateformes SaaS (Software as a Service) innovantes destinées aux mutuelles, assureurs, courtiers et institutions de prévoyance.</p>
+    <p>En charge :</p>
+    <ul><li>du pilotage des tests fonctionnels manuels et automatisés sur un projet de refonte ;</li><li>de la mise en place de la politique de test, de la stratégie de test et du plan de test (from scratch) ;</li><li>des tests fonctionnels automatisés des API de l'application ;</li><li>du pilotage d'une équipe de recette.</li></ul>
+    <h5>Actions</h5>
+    <ul><li>Analyse, conception et exécution des tests</li><li>Gestion des environnements (plateformes, applications)</li><li>Gestion des anomalies</li><li>Automatisation des API avec Postman</li><li>Automatisation de l'application web avec Robot Framework</li></ul>
+    <h5>Résultats</h5>
+    <p>En partant de zéro (from scratch), j'ai mis en place la politique et la stratégie de test du groupe, monté une équipe de 2 testeurs et amélioré la qualité des livrables.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Méthodologie :</b> Scrum</li><li><b>Gestionnaire de tests :</b> Squash TM</li><li><b>Autres outils :</b> Robot Framework, Postman</li><li><b>Types d'application :</b> Web, API</li><li><b>Niveaux de test :</b> tests d'intégration, tests métier</li><li><b>Secteur d'activité :</b> mutuelle</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">Assurance Maladie</div><div class="dt">De sept. 2021 à avr. 2024</div></div>
+  <div>
+    <h4>QA Senior chez Atos pour le compte de l'Assurance Maladie à Nantes</h4>
+    <h5>Contexte</h5>
+    <p>Mon Espace Santé permet à chaque citoyen de centraliser et de gérer ses informations médicales en ligne, de façon sécurisée et confidentielle. Le Dossier Médical Partagé permet de centraliser en ligne toutes les informations médicales importantes afin qu'elles soient accessibles, avec l'accord du patient, aux professionnels de santé qui le prennent en charge.</p>
+    <p>En charge :</p>
+    <ul><li>des tests fonctionnels manuels et automatisés de l'application mobile «&nbsp;Mon Espace Santé&nbsp;» de l'Assurance Maladie ;</li><li>des tests fonctionnels manuels et automatisés de l'application web «&nbsp;Mon Espace Santé&nbsp;» de l'Assurance Maladie ;</li><li>des tests fonctionnels automatisés des API de l'application «&nbsp;Dossier Médical Partagé&nbsp;» de l'Assurance Maladie.</li></ul>
+    <h5>Actions</h5>
+    <ul><li>Analyse, conception et exécution des tests</li><li>Gestion des environnements (plateformes, applications)</li><li>Gestion des anomalies</li><li>Automatisation des API avec Postman</li><li>Automatisation des API FHIR – Personal Health Device (PHD)</li><li>Automatisation des pages web avec Katalon</li><li>Automatisation de l'application web avec Katalon et BrowserStack</li></ul>
+    <h5>Résultats</h5>
+    <p>Audit d'accessibilité réussi, automatisation des tests.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Méthodologies :</b> Scrum, SAFe</li><li><b>Gestionnaires de tests :</b> ALM, Jira Xray</li><li><b>Autres outils :</b> Confluence, Jira, Postman, Wizard, Robot Framework, Katalon</li><li><b>Types d'application :</b> Android, iOS, Web, API</li><li><b>Niveaux de test :</b> tests d'intégration, tests système, tests d'acceptation</li><li><b>Secteur d'activité :</b> Assurance Maladie</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">Noelse</div><div class="dt">De mars 2020 à août 2021</div></div>
+  <div>
+    <h4>Lead QA chez Daveo pour le compte de Noelse</h4>
+    <h5>Contexte</h5>
+    <p>Noelse est une néobanque française, issue du groupe Afone, qui propose des services bancaires en ligne aux particuliers et aux professionnels.</p>
+    <p>En charge :</p>
+    <ul><li>du pilotage des tests fonctionnels manuels et automatisés des applications mobiles et web ;</li><li>du pilotage d'une équipe de recette.</li></ul>
+    <h5>Actions</h5>
+    <ul><li>Rédaction de la politique de test, de la stratégie de test et des plans de test</li><li>Conseil pour le recrutement de testeurs</li><li>Pilotage d'une équipe de recette de 4 personnes et de la recette</li><li>Gestion des anomalies de production et de recette</li><li>Gestion des environnements (plateformes, applications)</li><li>Gestion des jeux de données</li><li>Gestion des mises en production</li><li>Suivi des tests automatisés réalisés par les testeurs de l'équipe</li><li>Gestion des anomalies</li></ul>
+    <h5>Résultats</h5>
+    <p>En partant de zéro, j'ai mis en place la politique et la stratégie de test du groupe, monté une équipe de 3 testeurs et un stagiaire, amélioré la qualité des livrables et mis en place un comité de mise en production (composé du Lead QA, du Tech Lead, du PO et des décideurs).</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Gestionnaires de tests :</b> Squash TM, Jira, Xray</li><li><b>Frameworks :</b> Appium, Gherkin – Cucumber – Selenium</li><li><b>Autres outils :</b> TestFlight, Postman, SQL, PuTTY, FileZilla</li><li><b>Types d'application :</b> Android, iOS, Web, API, KYC</li><li><b>Niveaux de test :</b> tests d'intégration, tests système, tests utilisateurs</li><li><b>Secteur d'activité :</b> néobanque</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">CGI</div><div class="dt">De mai 2019 à févr. 2020</div></div>
+  <div>
+    <h4>Pilote de recette chez CGI pour le compte de La Poste</h4>
+    <h5>Contexte</h5>
+    <p>La Poste Solutions Business est la marque B2B du groupe La Poste, dédiée aux entreprises, collectivités et administrations publiques.</p>
+    <p>En charge des tests fonctionnels et automatisés des applications PC, mobiles et web de La Poste (assurance et guichet).</p>
+    <h5>Actions</h5>
+    <ul><li>Analyse, conception et exécution des tests</li><li>Gestion des environnements (plateformes, applications)</li><li>Gestion des jeux de données</li><li>Automatisation des tests</li><li>Pilotage de la recette</li><li>Gestion des anomalies</li></ul>
+    <h5>Résultats</h5>
+    <p>CGI a remporté un projet grâce au POC d'automatisation des tests que j'ai mis en place.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Gestionnaires de tests :</b> Squash TM, Jira</li><li><b>Frameworks :</b> Robot Framework, Selenium</li><li><b>Autres outils :</b> Mantis, APK Manager, SoapUI</li><li><b>Types d'application :</b> Android, iOS, Web, client lourd</li><li><b>Niveaux de test :</b> tests d'intégration, tests système, tests d'acceptation</li><li><b>Secteurs d'activité :</b> banque, assurance, courrier</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">Low Code Factory by K2</div><div class="dt">De janv. 2019 à avr. 2019</div></div>
+  <div>
+    <h4>Référent testeur chez LCF pour le compte de Renault</h4>
+    <h5>Contexte</h5>
+    <p>K2 est une plateforme qui permet aux entreprises de modéliser, d'automatiser et d'optimiser leurs processus métiers grâce à une approche low-code, facilitant ainsi la transformation numérique et l'efficacité opérationnelle.</p>
+    <p>En charge du pilotage des tests fonctionnels de tous les projets BPM K2.</p>
+    <h5>Actions</h5>
+    <ul><li>Élaboration de la stratégie de test</li><li>Organisation des tests</li><li>Conception des tests</li><li>Gestion des jeux de données</li><li>Exécution des tests</li><li>Intégration et développement K2</li><li>Gestion des anomalies</li></ul>
+    <h5>Résultats</h5>
+    <p>Grâce à la théorie des graphes, j'ai mis en place une méthodologie qui permet de mieux tester les solutions BPM.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Gestionnaire de tests :</b> TFS</li><li><b>BPM :</b> K2</li><li><b>Niveaux de test :</b> tests d'intégration, tests système, tests d'acceptation</li><li><b>Secteurs d'activité :</b> automobile, banque</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">Orange OAB</div><div class="dt">De janv. 2018 à déc. 2018</div></div>
+  <div>
+    <h4>Responsable qualification et validation chez OAB</h4>
+    <h5>Contexte</h5>
+    <p>En charge du pilotage des tests fonctionnels et automatisés d'un ensemble d'applications mobiles (iOS, Android et Windows) de type B2B, B2C et B2E.</p>
+    <h5>Actions</h5>
+    <ul><li>Élaboration de la stratégie de test</li><li>Conception des tests</li><li>Exécution des tests</li><li>Gestion des environnements (plateformes, applications)</li><li>Pilotage de projet de test</li><li>Automatisation des tests de web services avec SoapUI (scripts Groovy)</li><li>Gestion des anomalies</li></ul>
+    <h5>Résultats</h5>
+    <p>Succès commercial des applications.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Méthodologies :</b> Scrum, TDD</li><li><b>Gestionnaires de tests :</b> TFS, Jira, Squash TM</li><li><b>Autres outils :</b> Alfresco, SoapUI</li><li><b>Types d'application :</b> Android, iOS, Web</li><li><b>Niveaux de test :</b> tests d'intégration, tests système, tests d'acceptation</li><li><b>Secteurs d'activité :</b> grand public, banque, assurance</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">Orange OAB</div><div class="dt">D'avr. 2016 à déc. 2017</div></div>
+  <div>
+    <h4>Ingénieur test et qualification chez OAB</h4>
+    <h5>Contexte</h5>
+    <p>En charge des tests fonctionnels et automatisés d'une application web qui permet à un utilisateur de construire son propre serveur vocal interactif.</p>
+    <h5>Actions</h5>
+    <ul><li>Élaboration de la stratégie de test</li><li>Analyse de test</li><li>Analyse technique de test</li><li>Conception des tests selon la méthodologie TDD (Test Driven Development)</li><li>Exécution des tests</li><li>Automatisation des tests selon la méthodologie Keyword Driven Testing</li><li>Gestion des anomalies</li></ul>
+    <h5>Résultats</h5>
+    <p>Nous avons automatisé 90 % des tests de non-régression.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Méthodologies :</b> Scrum, TDD, Keyword Driven Testing</li><li><b>Frameworks :</b> Robot Framework, Selenium</li><li><b>Gestionnaires de tests :</b> Squash TM, Jira</li><li><b>Autres outils :</b> Alfresco, Wiki</li><li><b>Types d'application :</b> Android, iOS, Web</li><li><b>Niveaux de test :</b> tests d'intégration, tests système, tests d'acceptation</li><li><b>Secteur d'activité :</b> opérateur Orange</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">Orange OAB</div><div class="dt">De sept. 2015 à mars 2016</div></div>
+  <div>
+    <h4>Ingénieur test et qualification</h4>
+    <h5>Contexte</h5>
+    <p>En charge des tests fonctionnels d'un ensemble d'applications PC, web et mobiles (iOS, Android) qui permettent à un utilisateur de gérer le contenu stocké sur une Livebox Orange.</p>
+    <h5>Actions</h5>
+    <ul><li>Conception des tests</li><li>Exécution des tests</li><li>Gestion des jeux de données</li><li>Gestion des anomalies</li></ul>
+    <h5>Résultats</h5>
+    <p>La commercialisation de la Livebox a connu un succès.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Outils :</b> Quality Center, Mantis, Jira</li><li><b>Types d'application :</b> Android, iOS, Web</li><li><b>Niveaux de test :</b> tests système, tests d'acceptation</li><li><b>Secteur d'activité :</b> opérateur Orange</li></ul>
+  </div>
+</article>
+
+<article class="mis">
+  <div class="left"><div class="co">Orange OLPS</div><div class="dt">De mars 2015 à août 2015</div></div>
+  <div>
+    <h4>Stage de fin d'études — Développeur Java</h4>
+    <h5>Contexte</h5>
+    <p>En charge du développement d'une API Java qui permet d'extraire des informations d'un fichier Excel pour les transmettre à un serveur vocal interactif.</p>
+    <h5>Actions</h5>
+    <ul><li>Conception du projet</li><li>Développement du projet</li><li>Intégration et déploiement de l'API sur les serveurs</li></ul>
+    <h5>Résultats</h5>
+    <p>L'API est actuellement utilisée en production.</p>
+    <h5>Environnement technique</h5>
+    <ul><li><b>Méthodologies :</b> Scrum, UML</li><li><b>Langage :</b> Java</li><li><b>Autres outils :</b> Eclipse, PuTTY</li></ul>
+  </div>
+</article>
+</div>
+
+</body>
+</html>
