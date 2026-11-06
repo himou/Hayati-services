@@ -54,6 +54,7 @@ const translations = {
           bullets: [
             "Tests fonctionnels manuels et automatisés sur 4 applications web en production",
             "Automatisation des tests en Cypress, migration en cours vers Playwright",
+            "Utilisation de GitHub Copilot pour accélérer l'automatisation des tests",
             "Tests d'API automatisés avec Bruno, après migration de plus de 500 requêtes depuis Postman",
             "Intégration continue avec GitLab et référent interne Squash TM"
           ]
@@ -251,6 +252,7 @@ const translations = {
           bullets: [
             "Manual and automated functional testing on 4 production web applications",
             "Test automation in Cypress, currently migrating to Playwright",
+            "Using GitHub Copilot to speed up test automation",
             "Automated API testing in Bruno, after migrating 500+ requests from Postman",
             "Continuous integration with GitLab, internal referent for Squash TM"
           ]
